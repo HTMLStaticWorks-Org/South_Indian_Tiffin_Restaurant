@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Background Gradient (Royal Emerald Banana-Leaf) -->
+    <radialGradient id="emmaBg" cx="42%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#286952"/>
+      <stop offset="48%" stop-color="#164837"/>
+      <stop offset="85%" stop-color="#0d3023"/>
+      <stop offset="100%" stop-color="#061e16"/>
+    </radialGradient>
+
+    <!-- Metallic Royal Brass Gold (High Polish) -->
+    <linearGradient id="emmaBrass" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3B8"/>
+      <stop offset="25%" stop-color="#F7CE55"/>
+      <stop offset="55%" stop-color="#D69C25"/>
+      <stop offset="85%" stop-color="#9E690B"/>
+      <stop offset="100%" stop-color="#694303"/>
+    </linearGradient>
+
+    <!-- Warm Golden Light / Highlights -->
+    <linearGradient id="emmaGoldHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FFEFA3" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D49B22" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filter Coffee Froth Gradient -->
+    <linearGradient id="kaapiFroth" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#D98A3C"/>
+      <stop offset="40%" stop-color="#F2C17D"/>
+      <stop offset="70%" stop-color="#C27329"/>
+      <stop offset="100%" stop-color="#5E300E"/>
+    </linearGradient>
+
+    <!-- Aromatic Steam Gradient -->
+    <linearGradient id="steamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E5AA28" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#FFE885" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#FFF9D2" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter for depth -->
+    <filter id="softShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#03100B" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Shadow & Base Emerald Medallion -->
+  <circle cx="60" cy="60" r="56" fill="url(#emmaBg)" filter="url(#softShadow)"/>
+
+  <!-- Outer Beveled Brass Rim -->
+  <circle cx="60" cy="60" r="56" fill="none" stroke="url(#emmaBrass)" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="53" fill="none" stroke="#FFE885" stroke-width="0.75" stroke-opacity="0.6"/>
+
+  <!-- Ornate Beaded Inner Track (Temple Tradition) -->
+  <circle cx="60" cy="60" r="49.5" fill="none" stroke="url(#emmaBrass)" stroke-width="1.2" stroke-dasharray="1.2 3.8" stroke-linecap="round"/>
+
+  <!-- Thin Inner Brass Ring -->
+  <circle cx="60" cy="60" r="46.5" fill="none" stroke="url(#emmaBrass)" stroke-width="0.8" stroke-opacity="0.75"/>
+
+  <!-- ================= TOP CREST: NORTH STAR / DIYA SPARK ================= -->
+  <g transform="translate(60, 20)">
+    <path d="M0 -7 L1.6 -1.8 L6.8 0 L1.6 1.8 L0 7 L-1.6 1.8 L-6.8 0 L-1.6 -1.8 Z" fill="url(#emmaBrass)"/>
+    <circle cx="0" cy="0" r="1.2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= AROMATIC STEAM PLUMES ================= -->
+  <!-- Left Steam Wave -->
+  <path d="M53 43 C49 37 54 32 50 25 C48 22 51 18 55 17" fill="none" stroke="url(#steamGradient)" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Center-Right Steam Wave -->
+  <path d="M63 43 C67 36 61 31 66 24 C68 21 66 17 62 16" fill="none" stroke="url(#steamGradient)" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Fine Whisp -->
+  <path d="M58 39 C56 34 60 30 58 26" fill="none" stroke="url(#steamGradient)" stroke-width="1.4" stroke-linecap="round" stroke-opacity="0.6"/>
+
+  <!-- ================= THE ICONIC BRASS TUMBLER ================= -->
+  <!-- Tumbler Upper Lip (Flared Brass Rim) -->
+  <path d="M44.5 45.5 H75.5 C77.5 45.5 78.5 47 77.8 48.5 L76.5 50.5 H43.5 L42.2 48.5 C41.5 47 42.5 45.5 44.5 45.5 Z" fill="url(#emmaBrass)"/>
+  
+  <!-- Frothy Filter Kaapi / Surface -->
+  <ellipse cx="60" cy="46.8" rx="14.2" ry="3.2" fill="#2E1508"/>
+  <ellipse cx="60" cy="46.8" rx="12.8" ry="2.4" fill="url(#kaapiFroth)"/>
+  <!-- Froth Bubble Texture Accents -->
+  <circle cx="56" cy="46.5" r="1" fill="#FFF2D6" opacity="0.8"/>
+  <circle cx="63" cy="47" r="0.8" fill="#FFF2D6" opacity="0.85"/>
+  <circle cx="60" cy="46.2" r="0.7" fill="#FFF2D6" opacity="0.9"/>
+
+  <!-- Tumbler Tapered Body -->
+  <path d="M44.2 50.5 L48.8 73 H71.2 L75.8 50.5 Z" fill="url(#emmaBrass)"/>
+  
+  <!-- Tumbler Body Highlight Reflection -->
+  <path d="M51 51 L54 72 H57.5 L54.5 51 Z" fill="url(#emmaGoldHighlight)"/>
+  
+  <!-- Tumbler Traditional Rib/Groove Lines -->
+  <line x1="46" y1="58" x2="74" y2="58" stroke="#855407" stroke-width="1" stroke-opacity="0.7"/>
+  <line x1="46" y1="59.2" x2="74" y2="59.2" stroke="#FFF2B8" stroke-width="0.6" stroke-opacity="0.6"/>
+  <line x1="47.8" y1="65" x2="72.2" y2="65" stroke="#855407" stroke-width="0.8" stroke-opacity="0.6"/>
+
+  <!-- ================= THE ICONIC BRASS DAVARAH (SAUCER) ================= -->
+  <!-- Davarah Deep Shadow Well -->
+  <ellipse cx="60" cy="69" rx="31" ry="5.5" fill="#082117" opacity="0.45"/>
+
+  <!-- Davarah Flared Rim -->
+  <path d="M29 68 C29 66.2 31.5 65 34 65 H86 C88.5 65 91 66.2 91 68 C91 69.8 88.5 71 86 71 H34 C31.5 71 29 69.8 29 68 Z" fill="url(#emmaBrass)"/>
+  <ellipse cx="60" cy="67.5" rx="27" ry="2" fill="url(#emmaGoldHighlight)"/>
+
+  <!-- Davarah Bowl Body -->
+  <path d="M31.5 70 C33 79 42 86 60 86 C78 86 87 79 88.5 70 H31.5 Z" fill="url(#emmaBrass)"/>
+
+  <!-- Davarah Bowl Highlight Sheen -->
+  <path d="M42 71 C45 78 51 83 60 83 C64 83 67 81.5 70 79 C65 81.5 54 81 48 76 C44.5 73.5 43 71 42 71 Z" fill="url(#emmaGoldHighlight)"/>
+
+  <!-- Davarah Base Foot Rim -->
+  <path d="M48 85.5 H72 C73.5 85.5 74.5 86.8 74 88.2 L73.2 89.8 C72.8 90.6 71.8 91.2 70.8 91.2 H49.2 C48.2 91.2 47.2 90.6 46.8 89.8 L46 88.2 C45.5 86.8 46.5 85.5 48 85.5 Z" fill="url(#emmaBrass)"/>
+  <line x1="49" y1="87.5" x2="71" y2="87.5" stroke="#FFEFA8" stroke-width="0.7"/>
+
+  <!-- ================= LAUREL OF FRESH BANANA LEAVES / PADDY ================= -->
+  <!-- Left Leaf Sprig -->
+  <g fill="url(#emmaBrass)" stroke="#FFEAA0" stroke-width="0.3">
+    <!-- Leaf 1 (Top) -->
+    <path d="M22 47 C24 43 28 42 30 46 C27 48 24 49 22 47 Z"/>
+    <!-- Leaf 2 -->
+    <path d="M18 57 C19 52 24 51 26 55 C23 58 20 59 18 57 Z"/>
+    <!-- Leaf 3 -->
+    <path d="M17 67 C18 62 23 62 25 66 C21 69 19 69 17 67 Z"/>
+    <!-- Leaf 4 -->
+    <path d="M19 78 C20 73 25 74 26 78 C23 81 20 80 19 78 Z"/>
+    <!-- Leaf 5 (Bottom) -->
+    <path d="M25 87 C27 83 32 85 32 89 C29 91 26 90 25 87 Z"/>
+    <!-- Stem Connecting -->
+    <path d="M22 47 Q16 68 28 90" fill="none" stroke="url(#emmaBrass)" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Leaf Sprig (Symmetrical) -->
+  <g fill="url(#emmaBrass)" stroke="#FFEAA0" stroke-width="0.3">
+    <!-- Leaf 1 (Top) -->
+    <path d="M98 47 C96 43 92 42 90 46 C93 48 96 49 98 47 Z"/>
+    <!-- Leaf 2 -->
+    <path d="M102 57 C101 52 96 51 94 55 C97 58 100 59 102 57 Z"/>
+    <!-- Leaf 3 -->
+    <path d="M103 67 C102 62 97 62 95 66 C99 69 101 69 103 67 Z"/>
+    <!-- Leaf 4 -->
+    <path d="M101 78 C100 73 95 74 94 78 C97 81 100 80 101 78 Z"/>
+    <!-- Leaf 5 (Bottom) -->
+    <path d="M95 87 C93 83 88 85 88 89 C91 91 94 90 95 87 Z"/>
+    <!-- Stem Connecting -->
+    <path d="M98 47 Q104 68 92 90" fill="none" stroke="url(#emmaBrass)" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= BOTTOM HERITAGE BANNER / ESTD 1988 ================= -->
+  <g transform="translate(60, 102)">
+    <!-- Small Central Floral Knot -->
+    <circle cx="0" cy="-3.5" r="2.2" fill="url(#emmaBrass)"/>
+    <circle cx="-5.5" cy="-3.5" r="1.3" fill="url(#emmaBrass)"/>
+    <circle cx="5.5" cy="-3.5" r="1.3" fill="url(#emmaBrass)"/>
+    <!-- Arching Text EST. 1988 -->
+    <text x="0" y="4" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="6.2" font-weight="700" letter-spacing="1.8" fill="#FFF2C2">EST. 1988</text>
+  </g>
+</svg>

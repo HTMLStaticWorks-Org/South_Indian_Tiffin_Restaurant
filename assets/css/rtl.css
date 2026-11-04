@@ -1,0 +1,108 @@
+/* ==========================================================================
+   AMMA'S TIFFIN HOUSE — RIGHT-TO-LEFT (RTL) SUPPORT
+   Complements CSS logical properties in style.css by mirroring directional
+   icons, asymmetric collages, timeline axes, and horizontal motion tracks.
+   ========================================================================== */
+
+:root[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Preserve strict center alignment inside ALL cards in RTL as well */
+:root[dir="rtl"] .tiffin-card,
+:root[dir="rtl"] .tiffin-card__inner,
+:root[dir="rtl"] .tiffin-card__body {
+  text-align: center;
+}
+
+/* Mirror directional chevrons and arrow icons */
+:root[dir="rtl"] .icon-directional,
+:root[dir="rtl"] .breadcrumb__sep,
+:root[dir="rtl"] [data-snap-prev] svg,
+:root[dir="rtl"] [data-snap-next] svg,
+:root[dir="rtl"] [data-testimonial-prev] svg,
+:root[dir="rtl"] [data-testimonial-next] svg,
+:root[dir="rtl"] .tiffin-lightbox__nav svg {
+  transform: scaleX(-1);
+}
+
+/* Home 1 Split Hero Badge Placement */
+:root[dir="rtl"] .hero-split__badge-ring {
+  left: auto;
+  right: -1.25rem;
+}
+
+/* Marquee Ticker Reverse Direction in RTL */
+:root[dir="rtl"] .dish-marquee__track {
+  animation-name: marqueeContinuousRtl;
+}
+
+@keyframes marqueeContinuousRtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes marqueeScrollRtl {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Home 2 Vertical Social Rail & Floating Pill */
+:root[dir="rtl"] .hero-kenburns__social-rail {
+  left: auto;
+  right: 1.75rem;
+}
+
+:root[dir="rtl"] .floating-reserve-pill {
+  right: auto;
+  left: 1.5rem;
+}
+
+/* Home 2 Scroll Progress Origin */
+:root[dir="rtl"] .snap-progress__fill {
+  transform-origin: right center;
+}
+
+/* Vertical Timeline Mirroring */
+:root[dir="rtl"] .heritage-timeline::before {
+  left: auto;
+  right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  :root[dir="rtl"] .heritage-timeline::before {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+/* Mobile Drawer Slide From Inline-End (Left in RTL) */
+:root[dir="rtl"] .nav-drawer {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+  border-left: none;
+  border-right: 1px solid var(--brass-border);
+}
+
+:root[dir="rtl"] .nav-drawer.is-open {
+  transform: translateX(0);
+}
+
+/* Keep telephone numbers and clock numerals LTR-formatted inside RTL */
+:root[dir="rtl"] .ltr-num,
+:root[dir="rtl"] [type="tel"],
+:root[dir="rtl"] [type="email"] {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+

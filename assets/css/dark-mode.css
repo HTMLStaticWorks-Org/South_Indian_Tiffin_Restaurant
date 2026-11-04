@@ -1,0 +1,218 @@
+/* ==========================================================================
+   AMMA'S TIFFIN HOUSE — DARK MODE THEME ("Roasted Filter Coffee & Brass Lamp")
+   Warm chicory-coffee & roasted-bean charcoal surfaces with temple-brass gold
+   highlights. Strictly avoids stark #000000 / #FFFFFF. WCAG 2.1 AA verified.
+   ========================================================================== */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Core South Indian Palette Overrides */
+  --leaf: #429963;
+  --leaf-strong: #53B076;
+  --leaf-deep: #163220;
+  --leaf-tint: rgba(66, 153, 99, 0.16);
+
+  --turmeric: #F2B632;
+  --turmeric-deep: #D99612;
+  --turmeric-soft: rgba(242, 182, 50, 0.16);
+
+  --kumkum: #D44848;
+  --kumkum-hover: #E05C5C;
+  --kumkum-soft: rgba(212, 72, 72, 0.18);
+
+  --coconut: #19120E;
+  --coconut-elevated: #241A14;
+  --coconut-muted: #201611;
+  --coconut-card-alt: #2B1F18;
+
+  --filter-coffee: #F6EFE4;
+  --filter-coffee-muted: #CBBAA6;
+  --filter-coffee-subtle: #A8947F;
+
+  --brass: #D4A449;
+  --brass-soft: rgba(212, 164, 73, 0.28);
+  --brass-border: rgba(212, 164, 73, 0.26);
+
+  /* Surface & Elevation Tokens */
+  --header-bg: rgba(25, 18, 14, 0.86);
+  --header-border: rgba(212, 164, 73, 0.22);
+  --card-shadow: 0 18px 40px -14px rgba(8, 4, 2, 0.68), 0 2px 8px rgba(0, 0, 0, 0.45);
+  --card-shadow-hover: 0 26px 56px -12px rgba(8, 4, 2, 0.82), 0 0 0 1px rgba(212, 164, 73, 0.44);
+  --glare-color: rgba(242, 182, 50, 0.16);
+
+  --input-bg: #1E1510;
+  --input-border: rgba(212, 164, 73, 0.34);
+  --skeleton-base: #2B1F18;
+  --skeleton-shine: #3B2B22;
+}
+
+/* Header & Navigation Dark Refinements */
+:root[data-theme="dark"] .site-header {
+  background: var(--header-bg);
+  border-bottom-color: var(--header-border);
+}
+
+:root[data-theme="dark"] .dropdown-menu,
+:root[data-theme="dark"] .nav-drawer {
+  background: #231913;
+  border-color: var(--brass-border);
+}
+
+:root[data-theme="dark"] .icon-btn {
+  border-color: rgba(212, 164, 73, 0.35);
+  color: #FAF3E6;
+}
+
+:root[data-theme="dark"] .icon-btn:hover {
+  background: rgba(242, 182, 50, 0.18);
+  border-color: #FFD768;
+  color: #FFD768;
+}
+
+:root[data-theme="dark"] .theme-toggle__sun {
+  display: inline-flex;
+  color: #FFD768;
+}
+
+:root[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+/* Primary & Secondary Button Contrast in Dark Mode */
+:root[data-theme="dark"] .btn--primary {
+  background: #225E39;
+  color: #FAF4EA;
+  border-color: rgba(212, 164, 73, 0.4);
+}
+
+:root[data-theme="dark"] .btn--primary:hover,
+:root[data-theme="dark"] .btn--primary:focus-visible {
+  background: #2B7347;
+}
+
+:root[data-theme="dark"] .btn--kumkum {
+  background: #B83334;
+  color: #FCF7F0;
+}
+
+:root[data-theme="dark"] .btn--kumkum:hover,
+:root[data-theme="dark"] .btn--kumkum:focus-visible {
+  background: #CE3F40;
+}
+
+/* Card & Decorative Surfaces */
+:root[data-theme="dark"] .tiffin-card {
+  background: linear-gradient(165deg, #271C16 0%, #1F1611 100%);
+  border-color: rgba(212, 164, 73, 0.25);
+}
+
+:root[data-theme="dark"] .tiffin-card:hover,
+:root[data-theme="dark"] .tiffin-card:focus-within {
+  border-color: rgba(242, 182, 50, 0.52);
+}
+
+:root[data-theme="dark"] .tiffin-card__price {
+  color: #FFD768;
+  background: rgba(18, 42, 28, 0.88);
+  border: 1.5px solid rgba(255, 215, 104, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 215, 104, 0.18);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+:root[data-theme="dark"] .dotted-menu-row__price,
+:root[data-theme="dark"] .plate-choice__price {
+  color: #FFD768;
+}
+
+:root[data-theme="dark"] .hero-split__badge-ring {
+  background: rgba(36, 26, 20, 0.92);
+  border-color: var(--brass);
+}
+
+:root[data-theme="dark"] .menu-tabs-bar {
+  background: rgba(25, 18, 14, 0.95);
+  border-color: var(--brass-border);
+}
+
+:root[data-theme="dark"] .menu-tab-btn {
+  background: #241A14;
+  color: #FAF7F2;
+  border-color: var(--brass-border);
+}
+
+:root[data-theme="dark"] .menu-tab-btn:hover {
+  background: #2C2018;
+  border-color: var(--brass);
+  color: #FFFDF9;
+}
+
+:root[data-theme="dark"] .menu-tab-btn.is-active,
+:root[data-theme="dark"] .menu-tab-btn[aria-selected="true"] {
+  background: var(--leaf);
+  color: #FFFDF9;
+  border-color: var(--brass);
+}
+
+:root[data-theme="dark"] .dotted-menu-sheet,
+:root[data-theme="dark"] .plate-summary,
+:root[data-theme="dark"] .contact-form-panel,
+:root[data-theme="dark"] .combo-hero-card,
+:root[data-theme="dark"] .finder-box {
+  background: #241A14;
+  border-color: var(--brass-border);
+}
+
+:root[data-theme="dark"] .plate-choice {
+  background: #1F1611;
+  border-color: rgba(212, 164, 73, 0.22);
+}
+
+:root[data-theme="dark"] .plate-choice.is-selected {
+  background: rgba(66, 153, 99, 0.16);
+  border-color: var(--turmeric);
+}
+
+:root[data-theme="dark"] .site-footer {
+  background: #140E0B;
+  border-top-color: rgba(212, 164, 73, 0.3);
+}
+
+:root[data-theme="dark"] .map-frame-shell iframe {
+  filter: sepia(0.28) invert(0.88) hue-rotate(175deg) contrast(0.92) brightness(0.9);
+}
+
+:root[data-theme="dark"] .contact-email-link {
+  color: #FFD768;
+}
+
+/* Date & Time Picker Indicator Visibility in Dark Mode */
+:root[data-theme="dark"] input[type="date"],
+:root[data-theme="dark"] input[type="time"],
+:root[data-theme="dark"] input[type="datetime-local"],
+:root[data-theme="dark"] .form-field input[type="date"],
+:root[data-theme="dark"] .form-field input[type="time"] {
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator,
+:root[data-theme="dark"] input[type="time"]::-webkit-calendar-picker-indicator,
+:root[data-theme="dark"] input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+:root[data-theme="dark"] .form-field input[type="date"]::-webkit-calendar-picker-indicator,
+:root[data-theme="dark"] .form-field input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1) drop-shadow(0 0 2px rgba(255, 215, 104, 0.7));
+  opacity: 1 !important;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+:root[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator:hover,
+:root[data-theme="dark"] input[type="time"]::-webkit-calendar-picker-indicator:hover,
+:root[data-theme="dark"] .form-field input[type="date"]::-webkit-calendar-picker-indicator:hover,
+:root[data-theme="dark"] .form-field input[type="time"]::-webkit-calendar-picker-indicator:hover {
+  filter: brightness(0) invert(85%) sepia(100%) saturate(800%) hue-rotate(350deg) brightness(120%) drop-shadow(0 0 5px #FFD768);
+  opacity: 1 !important;
+  transform: scale(1.15);
+}
+

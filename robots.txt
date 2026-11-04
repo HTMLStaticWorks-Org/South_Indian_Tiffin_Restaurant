@@ -1,0 +1,10 @@
+# robots.txt — Amma's Tiffin House
+# TODO: Replace https://ammastiffinhouse.com with your production domain before deployment.
+
+User-agent: *
+Allow: /
+Disallow: /pages/404.html
+Disallow: /pages/coming-soon.html
+
+Sitemap: https://ammastiffinhouse.com/sitemap.xml
+

@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TODO: Replace title, description, canonical URL, and brand name -->
+  <title>South Indian Tiffin &amp; Meals Menu | Amma's Tiffin House</title>
+  <meta name="description" content="Browse our daily Covent Garden menu by meal time: steaming morning idli and dosa, unlimited banana-leaf lunch meals, crispy evening bajji, and degree coffee." />
+  <link rel="canonical" href="https://ammastiffinhouse.com/pages/menu.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Amma's Tiffin House" />
+  <meta property="og:title" content="South Indian Tiffin &amp; Meals Menu | Amma's Tiffin House" />
+  <meta property="og:description" content="Browse our daily Covent Garden menu by meal time: steaming morning idli and dosa, unlimited banana-leaf lunch meals, crispy evening bajji, and degree coffee." />
+  <meta property="og:url" content="https://ammastiffinhouse.com/pages/menu.html" />
+  <meta property="og:image" content="../assets/images/menu-masala-dosa.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('ammas_tiffin_theme');
+        var d = localStorage.getItem('ammas_tiffin_dir');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        if (d === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+  <link rel="stylesheet" href="../assets/css/rtl.css" />
+
+  <!-- JSON-LD Menu & Restaurant Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Amma's Tiffin House",
+    "url": "https://ammastiffinhouse.com/pages/menu.html",
+    "servesCuisine": ["South Indian", "Pure Vegetarian"],
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Daily Meal-Time Tiffin & Banana-Leaf Menu",
+      "hasMenuSection": [
+        { "@type": "MenuSection", "name": "Breakfast (6:30 AM – 11:30 AM)" },
+        { "@type": "MenuSection", "name": "Lunch Meals (12:00 PM – 3:30 PM)" },
+        { "@type": "MenuSection", "name": "Evening Tiffin (4:30 PM – 10:00 PM)" },
+        { "@type": "MenuSection", "name": "Beverages and Sweets" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="preloader" data-preloader aria-hidden="true">
+    <svg class="preloader__kolam" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.2">
+      <circle cx="40" cy="40" r="32" />
+      <path d="M40 12 C56 28, 56 52, 40 68 C24 52, 24 28, 40 12 Z" />
+      <path d="M12 40 C28 24, 52 24, 68 40 C52 56, 28 56, 12 40 Z" />
+      <circle cx="40" cy="40" r="5" />
+    </svg>
+    <span class="preloader__label">Laying Fresh Banana Leaves…</span>
+  </div>
+
+  <!-- =====================================================================
+       SITE HEADER & NAVIGATION
+       ===================================================================== -->
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a href="./index.html" class="brand-logo" aria-label="Amma's Tiffin House — Home">
+        <span class="brand-logo__emblem" aria-hidden="true">
+          <img src="../assets/images/logo.svg" alt="Amma's Tiffin House Logo" class="brand-logo__img" width="46" height="46" />
+        </span>
+        <span class="brand-logo__text">
+          <span class="brand-logo__name">Amma's Tiffin House</span>
+          <span class="brand-logo__sub">Covent Garden • Est. 1988</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <div class="nav-dropdown" data-dropdown>
+          <button type="button" class="dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="dropdown-menu" data-dropdown-menu>
+            <li>
+              <a href="./index.html">
+                <span class="dropdown-menu__title">Home 1</span>
+              </a>
+            </li>
+            <li>
+              <a href="./home-2.html">
+                <span class="dropdown-menu__title">Home 2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="./menu.html" class="nav-link" aria-current="page">Menu</a>
+        <a href="./our-story.html" class="nav-link">Our Story</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="status-badge" data-live-status aria-live="polite">
+          <span class="status-badge__dot" aria-hidden="true"></span>
+          <span class="status-badge__text">Checking kitchen hours…</span>
+        </div>
+
+        <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch to Filter Coffee dark mode">
+          <span class="theme-toggle__moon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+            </svg>
+          </span>
+          <span class="theme-toggle__sun" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4.5"/>
+              <line x1="12" y1="2" x2="12" y2="4.5"/>
+              <line x1="12" y1="19.5" x2="12" y2="22"/>
+              <line x1="4.22" y1="4.22" x2="6" y2="6"/>
+              <line x1="18" y1="18" x2="19.78" y2="19.78"/>
+              <line x1="2" y1="12" x2="4.5" y2="12"/>
+              <line x1="19.5" y1="12" x2="22" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="6" y2="18"/>
+              <line x1="18" y1="6" x2="19.78" y2="4.22"/>
+            </svg>
+          </span>
+        </button>
+
+        <button type="button" class="icon-btn" data-rtl-toggle aria-pressed="false" aria-label="Switch layout direction to Right-to-Left">
+          <span data-rtl-label>RTL</span>
+        </button>
+
+        <a href="./contact.html#reserve-table" class="btn btn--kumkum header-cta" data-magnetic>
+          Reserve / Call Now
+        </a>
+
+        <button type="button" class="icon-btn hamburger-btn" data-nav-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-backdrop" data-nav-backdrop></div>
+  <aside id="mobile-drawer" class="nav-drawer" data-nav-drawer aria-label="Mobile Navigation">
+    <div class="brand-logo">
+      <span class="brand-logo__emblem" aria-hidden="true">
+        <img src="../assets/images/logo.svg" alt="Amma's Tiffin House Logo" class="brand-logo__img" width="46" height="46" />
+      </span>
+      <span class="brand-logo__text">
+        <span class="brand-logo__name">Amma's Tiffin House</span>
+        <span class="brand-logo__sub">Daily Menu</span>
+      </span>
+    </div>
+    <ul class="nav-drawer__list">
+      <li><a href="./index.html" class="nav-drawer__link">Home 1</a></li>
+      <li class="nav-drawer__sub"><a href="./home-2.html" class="nav-drawer__link">Home 2</a></li>
+      <li><a href="./menu.html" class="nav-drawer__link" aria-current="page">Menu by Meal Time</a></li>
+      <li><a href="./our-story.html" class="nav-drawer__link">Our Story</a></li>
+      <li><a href="./contact.html" class="nav-drawer__link">Contact &amp; Location Map</a></li>
+    </ul>
+    <a href="tel:+442079460198" class="btn btn--kumkum">Call <span class="ltr-num">+44 20 7946 0198</span></a>
+  </aside>
+
+  <!-- =====================================================================
+       MAIN CONTENT — MENU ORGANISED BY MEAL TIME
+       ===================================================================== -->
+  <main id="main-content">
+
+    <!-- Today's Special Ribbon -->
+    <!-- TODO: Update daily special announcement -->
+    <div class="menu-special-ribbon" role="region" aria-label="Today's Kitchen Special">
+      <span class="badge" style="background: var(--turmeric); color: #241610;">Today's Special</span>
+      <span>Karuveppilai Ghee Podi Mini Idli (14 pcs) &amp; Tender-Coconut Elaneer Payasam — Available All Day (£18.50)</span>
+    </div>
+
+    <!-- =====================================================================
+         SECTION 1: MENU INTRODUCTION
+         ===================================================================== -->
+    <section class="section" style="padding-bottom: var(--space-5);" aria-labelledby="menu-page-heading">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: var(--space-3);">
+          <span class="eyebrow">100% Pure Vegetarian South Indian Kitchen</span>
+          <h1 id="menu-page-heading">Menu Introduction</h1>
+          <p>All prices are in British Pounds (£) and inclusive of 20% VAT. Every item is cooked to order using cold-pressed sesame oil, fresh coconut, and pure cultured ghee.</p>
+        </div>
+
+        <div class="dietary-legend" aria-label="Dietary and Spice Legend">
+          <span class="badge badge--veg">Pure Vegetarian</span>
+          <span class="badge badge--chef">Chef's Pick</span>
+          <span class="badge badge--spicy">Spicy / Peppery</span>
+          <span style="font-size: 0.85rem; color: var(--filter-coffee-muted);">
+            <strong>Allergen Note:</strong> Dishes may contain dairy (ghee/curd), cashews, sesame, mustard, or wheat semolina (rava/poori). Ask your server for Jain (no-onion, no-garlic) sambar &amp; white chutney.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Meal-Time Tab / Pill Navigation (6 Curated Sections) -->
+    <div class="menu-tabs-bar">
+      <div class="container">
+        <div class="menu-tablist" role="tablist" aria-label="Meal Time Categories" data-menu-tabs>
+          <button
+            type="button"
+            class="menu-tab-btn is-active"
+            id="tab-all"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-breakfast panel-dosas panel-lunch panel-evening panel-combos"
+            data-tab-key="all"
+          >
+            All Categories
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab-btn"
+            id="tab-breakfast"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-breakfast"
+            tabindex="-1"
+            data-tab-key="breakfast"
+          >
+            Breakfast Collection
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab-btn"
+            id="tab-dosas"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-dosas"
+            tabindex="-1"
+            data-tab-key="dosas"
+          >
+            Dosa Varieties
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab-btn"
+            id="tab-lunch"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-lunch"
+            tabindex="-1"
+            data-tab-key="lunch"
+          >
+            Lunch &amp; South Indian Meals
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab-btn"
+            id="tab-evening"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-evening"
+            tabindex="-1"
+            data-tab-key="evening"
+          >
+            Evening Snacks &amp; Beverages
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab-btn"
+            id="tab-combos"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-combos"
+            tabindex="-1"
+            data-tab-key="combos"
+          >
+            Special Combos &amp; Pricing
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Panels Container -->
+    <div class="menu-panels-wrapper" aria-live="polite">
+      <div class="container">
+
+        <!-- Skeleton Loader Displayed During Tab Content Swap -->
+        <div class="skeleton-grid" data-menu-skeleton hidden aria-hidden="true">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+
+        <!-- ===============================================================
+             SECTION 2: BREAKFAST COLLECTION
+             =============================================================== -->
+        <section id="panel-breakfast" class="section menu-panel" role="tabpanel" aria-labelledby="tab-breakfast" data-menu-panel>
+          <div class="section-header section-header--left" style="margin-bottom: var(--space-4);">
+            <span class="eyebrow">Served 7:30 AM – 11:30 AM Daily</span>
+            <h2 id="breakfast-collection-heading">Breakfast Collection</h2>
+            <p>Traditional steamed, roasted, and puffed morning staples prepared in seasoned bronze and cast-iron vessels.</p>
+          </div>
+
+          <div class="menu-breakfast-grid">
+            <article class="tiffin-card" data-tilt data-card-anim="steam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-idli-vada.webp" alt="Two steamed white idlis and one crispy medu vada on a banana leaf with sambar and two chutneys" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Chef's Pick</span>
+                </div>
+                <h3 class="tiffin-card__title">Idli-Vada Suprabhatam</h3>
+                <p class="tiffin-card__desc">Two pillowy Malligai idlis paired with one golden medu vada, drumstick sambar, coconut chutney, and coriander chutney.</p>
+                <span class="tiffin-card__price">£10.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="steam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-poori-masala.webp" alt="Two golden puffed wheat pooris served with spiced potato curry and fresh herbs" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                </div>
+                <h3 class="tiffin-card__title">Puffed Poori &amp; Urulai Kilangu</h3>
+                <p class="tiffin-card__desc">Three golden whole-wheat pooris served alongside fragrant ginger-green-chilli potato besan masala.</p>
+                <span class="tiffin-card__price">£12.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="spice">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-rava-upma.webp" alt="Fluffy roasted semolina rava upma garnished with mustard seeds and curry leaves on banana leaf" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                </div>
+                <h3 class="tiffin-card__title">Ghee Roasted Rava Upma</h3>
+                <p class="tiffin-card__desc">Double-roasted Bombay rava simmered with ginger, Bengal gram, cashews, and curry leaves—served with coconut chutney &amp; sugar.</p>
+                <span class="tiffin-card__price">£9.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="steam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/special-pongal.webp" alt="Velvety slow-cooked ghee ven pongal infused with whole Tellicherry peppercorns and cashews" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Temple Heritage</span>
+                </div>
+                <h3 class="tiffin-card__title">Kovil Ven Pongal &amp; Gothsu</h3>
+                <p class="tiffin-card__desc">Velvety slow-cooked rice and moong dal tempered with whole Tellicherry peppercorns, cumin, ginger, and curry leaves in warm ghee.</p>
+                <span class="tiffin-card__price">£11.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="steam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/special-idli-sambar.webp" alt="Fourteen bite-sized button idlis submerged in piping hot shallot-drumstick sambar" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Morning Bestseller</span>
+                </div>
+                <h3 class="tiffin-card__title">Ghee Sambar Button Mini Idlis</h3>
+                <p class="tiffin-card__desc">Fourteen bite-sized button idlis fully submerged in piping hot shallot-drumstick sambar, crowned with a generous ladle of cow ghee.</p>
+                <span class="tiffin-card__price">£11.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="spice">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/special-medu-vada.webp" alt="Two crispy golden medu vadas served with fresh coconut chutney and sambar" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                </div>
+                <h3 class="tiffin-card__title">Medu Vada Twin Platter</h3>
+                <p class="tiffin-card__desc">Two crisp-crusted, fluffy-hearted urad dal fritters studded with crushed black pepper, fresh ginger, and curry leaves.</p>
+                <span class="tiffin-card__price">£9.00</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===============================================================
+             SECTION 3: DOSA VARIETIES
+             =============================================================== -->
+        <section id="panel-dosas" class="section menu-panel" role="tabpanel" aria-labelledby="tab-dosas" data-menu-panel>
+          <div class="section-header section-header--left" style="margin-bottom: var(--space-4);">
+            <span class="eyebrow">Fermented Batter &amp; Cast-Iron Tawa Classics</span>
+            <h2 id="dosa-varieties-heading">Dosa Varieties</h2>
+            <p>Crispy, golden crepes fermented 14 hours and roasted on heavy seasoned iron griddles with pure cow ghee.</p>
+          </div>
+
+          <div class="menu-breakfast-grid">
+            <article class="tiffin-card" data-tilt data-card-anim="dosa-roll">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-masala-dosa.webp" alt="Crispy spiral Madras masala dosa served on steel plate with sambar, white chutney, and spiced buttermilk" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Bestseller</span>
+                </div>
+                <h3 class="tiffin-card__title">Madras Potato Masala Dosa</h3>
+                <p class="tiffin-card__desc">Golden fermented rice-urad crepe folded around turmeric-tempered potato-onion podimas and roasted cashews.</p>
+                <span class="tiffin-card__price">£13.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="dosa-roll">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-rava-dosa.webp" alt="Crisp lacy golden onion and black pepper rava dosa served freshly off the griddle" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                </div>
+                <h3 class="tiffin-card__title">Lacy Onion Pepper Rava Dosa</h3>
+                <p class="tiffin-card__desc">Netted semolina-rice crepe crisped with whole cumin, green chillies, cashews, and caramelised shallots.</p>
+                <span class="tiffin-card__price">£14.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="leaf">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-pesarattu.webp" alt="Crisp green moong bean pesarattu dosa topped with warm ginger upma" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Chef's Pick</span>
+                </div>
+                <h3 class="tiffin-card__title">MLA Pesarattu Upma</h3>
+                <p class="tiffin-card__desc">Sprouted whole green-gram crepe stuffed with ghee-kissed semolina upma and paired with fiery allam ginger pachadi.</p>
+                <span class="tiffin-card__price">£15.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="spice">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-lentil-uttapam.webp" alt="Thick multigrain lentil uttapam topped with diced beetroot, onions, and herbs sizzling on cast-iron griddle" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--spicy">Spiced Lentil</span>
+                </div>
+                <h3 class="tiffin-card__title">Pancharatna Vegetable Uttapam</h3>
+                <p class="tiffin-card__desc">Protein-rich five-lentil uttapam studded with grated carrot, beetroot, shallots, coriander, and crushed pepper.</p>
+                <span class="tiffin-card__price">£14.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="dosa-roll">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/special-ghee-podi-dosa.webp" alt="Crisp paper-thin ghee podi roast dosa served with chutney trio and sambar" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--spicy">Gunpowder Podi</span>
+                </div>
+                <h3 class="tiffin-card__title">Ghee Podi Paper Roast Dosa</h3>
+                <p class="tiffin-card__desc">Ultra-crisp wafer crepe brushed with fragrant melted cow ghee and dusted generously with spicy heirloom roasted dal podi.</p>
+                <span class="tiffin-card__price">£14.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="steam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-adai-avial.webp" alt="Chettinad four-lentil spiced adai crepe with creamy vegetable avial, fresh butter, and palm jaggery" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Heirloom</span>
+                </div>
+                <h3 class="tiffin-card__title">Chettinad Adai Avial &amp; Jaggery</h3>
+                <p class="tiffin-card__desc">Hearty four-lentil spiced griddle crepe served with coconut-vegetable avial, home-churned white butter, and organic palm jaggery.</p>
+                <span class="tiffin-card__price">£15.50</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===============================================================
+             SECTION 4: LUNCH & SOUTH INDIAN MEALS
+             =============================================================== -->
+        <section id="panel-lunch" class="section menu-panel" role="tabpanel" aria-labelledby="tab-lunch" data-menu-panel>
+          <div class="section-header section-header--left" style="margin-bottom: var(--space-4);">
+            <span class="eyebrow">Served 12:00 PM – 3:30 PM Daily</span>
+            <h2 id="lunch-heading">Lunch &amp; South Indian Meals</h2>
+            <p>Traditional midday feast served on fresh cut plantain leaves with unlimited aromatic Ponni rice, slow-simmered gravies, and seasonal vegetables.</p>
+          </div>
+
+          <div class="lunch-feature-duo">
+            <article class="tiffin-card" data-tilt data-card-anim="leaf">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-banana-leaf-meals.webp" alt="Unlimited South Indian banana-leaf lunch meal with steamed rice, sambar, appalam, poriyal, kootu, and sweets" width="900" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Unlimited Sadhya</span>
+                </div>
+                <h3 class="tiffin-card__title">Traditional Unlimited Banana-Leaf Meals</h3>
+                <p class="tiffin-card__desc">Served on a fresh cut plantain leaf with Ponni rice, paruppu &amp; ghee, sambar, vatha kuzhambu, rasam, kootu, two poriyals, appalam, curd, pickle, and daily payasam.</p>
+                <span class="tiffin-card__price">£26.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="kolam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-curd-rice.webp" alt="Bowl of creamy tempered South Indian curd rice topped with ruby pomegranate arils and crisp sun-dried chillies" width="900" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                </div>
+                <h3 class="tiffin-card__title">Bagala Bath (Pomegranate Thayir Sadam)</h3>
+                <p class="tiffin-card__desc">Velvety mashed rice folded with fresh cow curd, cream, ginger, green grapes, pomegranate pearls, and fried mor milagai.</p>
+                <span class="tiffin-card__price">£13.50</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Classic Temple-Bordered Dotted-Leader Price List -->
+          <div class="dotted-menu-sheet">
+            <h3 style="text-align: center; margin-bottom: var(--space-4);">Midday Variety Rice &amp; Accompaniments</h3>
+            <ul class="dotted-menu-list">
+              <li>
+                <div class="dotted-menu-row__top">
+                  <span class="dotted-menu-row__name">Kovil Puliyodarai (Spiced Tamarind Rice)</span>
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="badge badge--spicy">Tangy-Spicy</span>
+                  <span class="dotted-menu-row__leader" aria-hidden="true"></span>
+                  <span class="dotted-menu-row__price">£13.00</span>
+                </div>
+                <p style="margin: 0.25rem 0 0;">Aged dark tamarind paste slow-cooked with roasted sesame powder, peanuts, curry leaves, and gingelly oil.</p>
+              </li>
+
+              <li>
+                <div class="dotted-menu-row__top">
+                  <span class="dotted-menu-row__name">Bisibelebath / Arachuvitta Sambar Sadam</span>
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="badge badge--chef">Chef's Pick</span>
+                  <span class="dotted-menu-row__leader" aria-hidden="true"></span>
+                  <span class="dotted-menu-row__price">£14.50</span>
+                </div>
+                <p style="margin: 0.25rem 0 0;">One-pot rice and toor dal simmered with shallots, drumsticks, freshly ground coriander-fenugreek masala, and ghee.</p>
+              </li>
+
+              <li>
+                <div class="dotted-menu-row__top">
+                  <span class="dotted-menu-row__name">Elumichai Sadam (Turmeric Lemon Rice)</span>
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="dotted-menu-row__leader" aria-hidden="true"></span>
+                  <span class="dotted-menu-row__price">£12.00</span>
+                </div>
+                <p style="margin: 0.25rem 0 0;">Zesty Erode turmeric and fresh lime rice studded with crunchy roasted chana dal and cashews, served with potato roast.</p>
+              </li>
+
+              <li>
+                <div class="dotted-menu-row__top">
+                  <span class="dotted-menu-row__name">Three-Rice Executive Tiffin Carrier</span>
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="dotted-menu-row__leader" aria-hidden="true"></span>
+                  <span class="dotted-menu-row__price">£19.50</span>
+                </div>
+                <p style="margin: 0.25rem 0 0;">Tasting portions of Sambar Sadam, Puliyodarai, and Thayir Sadam served with avial, appalam, and mango thokku.</p>
+              </li>
+
+              <li>
+                <div class="dotted-menu-row__top">
+                  <span class="dotted-menu-row__name">Milagu Jeera Rasam Drinking Cup</span>
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="badge badge--spicy">Peppery</span>
+                  <span class="dotted-menu-row__leader" aria-hidden="true"></span>
+                  <span class="dotted-menu-row__price">£6.00</span>
+                </div>
+                <p style="margin: 0.25rem 0 0;">Restorative tamarind-tomato broth infused with crushed black pepper, cumin, garlic, and cilantro stems.</p>
+              </li>
+
+              <li>
+                <div class="dotted-menu-row__top">
+                  <span class="dotted-menu-row__name">Maravalli Kilangu &amp; Urulai Roast Bowl</span>
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="dotted-menu-row__leader" aria-hidden="true"></span>
+                  <span class="dotted-menu-row__price">£9.50</span>
+                </div>
+                <p style="margin: 0.25rem 0 0;">Iron-skillet baby potato roast tossed in red chilli-fennel masala.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ===============================================================
+             SECTION 5: EVENING SNACKS & BEVERAGES
+             =============================================================== -->
+        <section id="panel-evening" class="section menu-panel" role="tabpanel" aria-labelledby="tab-evening" data-menu-panel>
+          <div class="section-header section-header--left" style="margin-bottom: var(--space-4);">
+            <span class="eyebrow">Available 4:00 PM – 10:30 PM Daily</span>
+            <h2 id="evening-heading">Evening Snacks &amp; Beverages</h2>
+            <p>Hot fried teatime tiffin, brass-filter Kumbakonam brews, and authentic ghee sweets.</p>
+          </div>
+
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; margin-bottom: var(--space-3); color: var(--filter-coffee);">Evening Snacks &amp; Hot Tiffin</h3>
+          <div class="evening-compact-grid">
+            <article class="tiffin-card" data-tilt data-card-anim="spice">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-mirchi-bajji.webp" alt="Four crisp golden chilli bajji fritters on a banana leaf with green mint and red tomato chutneys" width="720" height="540" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="badge badge--spicy">4:30 PM Hot</span>
+                </div>
+                <h3 class="tiffin-card__title">Crispy Chilli Milagai Bajji</h3>
+                <p class="tiffin-card__desc">Mild long green chillies dipped in ajwain-spiced gram batter and fried golden crisp.</p>
+                <span class="tiffin-card__price">£8.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="dosa-roll">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-evening-platter.webp" alt="Platter of stuffed evening bajji and bonda fritters served with chopped onions and fresh lime" width="720" height="540" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="badge badge--chef">Chef's Pick</span>
+                </div>
+                <h3 class="tiffin-card__title">Mysore Bonda &amp; Bajji Basket</h3>
+                <p class="tiffin-card__desc">Assorted fluffy curd-urad bondas and raw plantain bajjis with ginger-coconut chutney.</p>
+                <span class="tiffin-card__price">£11.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="kolam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-kuzhi-paniyaram.webp" alt="Seven golden roasted Chettinad kuzhi paniyarams on a banana leaf with red kara chutney, white chutney, and sambar" width="720" height="540" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="badge badge--chef">Chettinad</span>
+                </div>
+                <h3 class="tiffin-card__title">Chettinad Kuzhi Paniyaram</h3>
+                <p class="tiffin-card__desc">Seven savoury tempered rice-lentil dumplings roasted in seasoned cast-iron moulds.</p>
+                <span class="tiffin-card__price">£12.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="spice">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-pattani-sundal.webp" alt="South Indian spiced white pea pattani sundal tossed with coconut and raw mango" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Veg</span>
+                </div>
+                <h3 class="tiffin-card__title">Spiced Pattani Sundal</h3>
+                <p class="tiffin-card__desc">Steamed white peas tossed with freshly grated coconut, raw mango, mustard, and red chillies.</p>
+                <span class="tiffin-card__price">£7.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card evening-grid--center-start" data-tilt data-card-anim="steam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-idiyappam.webp" alt="Steamed rice string hoppers idiyappam served with sweet cardamom coconut milk" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Veg</span>
+                </div>
+                <h3 class="tiffin-card__title">Idiyappam &amp; Coconut Paal</h3>
+                <p class="tiffin-card__desc">Delicate steamed string hoppers served with cardamom-scented sweetened coconut milk or kurma.</p>
+                <span class="tiffin-card__price">£13.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="spice">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/menu-kothu-idli.webp" alt="Sizzling Madurai tawa tossed kothu idli with shallots, tomatoes, and spicy gunpowder" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Veg</span>
+                  <span class="badge badge--spicy">Fiery</span>
+                </div>
+                <h3 class="tiffin-card__title">Madurai Kothu Idli</h3>
+                <p class="tiffin-card__desc">Diced steamed idlis flash-tossed on the iron tawa with shallots, tomatoes, curry leaves, and podi.</p>
+                <span class="tiffin-card__price">£12.50</span>
+              </div>
+            </article>
+          </div>
+
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; margin-top: var(--space-5); margin-bottom: var(--space-3); color: var(--filter-coffee);">Davara Filter Coffee &amp; Temple Sweets</h3>
+          <div class="bev-two-col">
+            <!-- Column 1: Hot Brews & Temple Coolers -->
+            <div class="bev-column">
+              <h4 style="text-align: center; margin-bottom: var(--space-3); font-family: var(--font-display);">Brass-Davara Brews &amp; Coolers</h4>
+
+              <div class="bev-medallions">
+                <article class="tiffin-card" data-tilt data-card-anim="coffee">
+                  <div class="tiffin-card__inner">
+                    <div class="tiffin-card__medallion">
+                      <img src="../assets/images/menu-filter-coffee.webp" alt="Frothy South Indian degree filter kaapi served in stainless steel davara and tumbler" width="500" height="500" loading="lazy" />
+                    </div>
+                    <div class="tiffin-card__badges">
+                      <span class="badge badge--veg">Veg</span>
+                      <span class="badge badge--chef">Signature</span>
+                    </div>
+                    <h3 class="tiffin-card__title">Kumbakonam Degree Kaapi</h3>
+                    <p class="tiffin-card__desc">First-drip brass filter decoction pulled frothy with farm A2 milk.</p>
+                    <span class="tiffin-card__price">£5.50</span>
+                  </div>
+                </article>
+
+                <article class="tiffin-card" data-tilt data-card-anim="coffee">
+                  <div class="tiffin-card__inner">
+                    <div class="tiffin-card__medallion">
+                      <img src="../assets/images/menu-jigarthanda.webp" alt="Traditional Madurai Jigarthanda chilled drink with badam pisin, nannari syrup, and malai ice cream" width="500" height="500" loading="lazy" />
+                    </div>
+                    <div class="tiffin-card__badges">
+                      <span class="badge badge--veg">Veg</span>
+                    </div>
+                    <h3 class="tiffin-card__title">Madurai Jigarthanda / Rose Milk</h3>
+                    <p class="tiffin-card__desc">Chilled farm milk infused with organic damask rose syrup &amp; sabja seeds.</p>
+                    <span class="tiffin-card__price">£7.50</span>
+                  </div>
+                </article>
+              </div>
+
+              <ul class="bev-list">
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Karupatti Sukku Malli Kaapi</strong> <span class="badge badge--veg">Veg</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Palm-jaggery herbal coffee brewed with dry ginger, coriander seeds, and tulsi.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£6.00</span>
+                </li>
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Neer Mor (Spiced Churned Buttermilk)</strong> <span class="badge badge--veg">Veg</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Cooling buttermilk tempered with asafoetida, ginger, green chilli, and cilantro.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£5.00</span>
+                </li>
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Temple Jaggery Panakam</strong> <span class="badge badge--veg">Veg</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Rama Navami classic with crushed cardamom, edible camphor hint, and lime.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£5.50</span>
+                </li>
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Fresh Filter Decoction Bottle (250 ml)</strong> <span class="badge badge--chef">Take Home</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Brew 8–10 authentic cups at home; bottled fresh every morning.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£19.00</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 2: Ghee-Kissed Heritage Sweets -->
+            <div class="bev-column">
+              <h4 style="text-align: center; margin-bottom: var(--space-3); font-family: var(--font-display);">Temple &amp; Festival Sweets</h4>
+
+              <div class="bev-medallions">
+                <article class="tiffin-card" data-tilt data-card-anim="steam">
+                  <div class="tiffin-card__inner">
+                    <div class="tiffin-card__medallion">
+                      <img src="../assets/images/menu-payasam.webp" alt="Bowl of creamy cardamom payasam garnished with golden raisins and roasted cashews" width="500" height="500" loading="lazy" />
+                    </div>
+                    <div class="tiffin-card__badges">
+                      <span class="badge badge--veg">Veg</span>
+                      <span class="badge badge--chef">Chef's Pick</span>
+                    </div>
+                    <h3 class="tiffin-card__title">Paal Semiya Payasam</h3>
+                    <p class="tiffin-card__desc">Slow-reduced milk pudding with ghee-roasted vermicelli, raisins &amp; cashews.</p>
+                    <span class="tiffin-card__price">£9.00</span>
+                  </div>
+                </article>
+
+                <article class="tiffin-card" data-tilt data-card-anim="kolam">
+                  <div class="tiffin-card__inner">
+                    <div class="tiffin-card__medallion">
+                      <img src="../assets/images/menu-mysore-pak.webp" alt="Three rich golden cubes of pure ghee Mysore pak served on a green banana leaf" width="500" height="500" loading="lazy" />
+                    </div>
+                    <div class="tiffin-card__badges">
+                      <span class="badge badge--veg">Veg</span>
+                    </div>
+                    <h3 class="tiffin-card__title">Melt-in-Mouth Ghee Mysore Pak</h3>
+                    <p class="tiffin-card__desc">Warm roasted gram-flour fudge rich with pure Kangeyam cow ghee (2 pcs).</p>
+                    <span class="tiffin-card__price">£9.50</span>
+                  </div>
+                </article>
+              </div>
+
+              <ul class="bev-list">
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Kovil Sakkarai Pongal</strong> <span class="badge badge--veg">Veg</span> <span class="badge badge--chef">Festival Favourite</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Organic Marayoor jaggery, moong dal, nutmeg, cloves, and ghee-fried cashews.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£10.50</span>
+                </li>
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Kashmiri Saffron Rava Kesari</strong> <span class="badge badge--veg">Veg</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Silky golden semolina halwa infused with saffron strands and green cardamom.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£8.00</span>
+                </li>
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Kasi Halwa (Warm Ash-Gourd Sweet)</strong> <span class="badge badge--veg">Veg</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Translucent wedding-style white pumpkin halwa glistening with ghee.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£8.50</span>
+                </li>
+                <li class="bev-list__item">
+                  <div>
+                    <strong>Tirunelveli Ghee Wheat Halwa</strong> <span class="badge badge--veg">Veg</span>
+                    <p style="margin: 0.15rem 0 0; font-size: 0.88rem;">Glossy slow-stirred wheat milk halwa simmered with cashews and cow ghee.</p>
+                  </div>
+                  <span class="dotted-menu-row__price">£9.00</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===============================================================
+             SECTION 6: SPECIAL COMBOS & PRICING
+             =============================================================== -->
+        <section id="panel-combos" class="section menu-panel" role="tabpanel" aria-labelledby="tab-combos" data-menu-panel>
+          <div class="section-header section-header--left" style="margin-bottom: var(--space-4);">
+            <span class="eyebrow">Value Combinations &amp; Multi-Course Menus</span>
+            <h2 id="combos-heading">Special Combos &amp; Pricing</h2>
+            <p>Carefully composed multi-course combos bringing together our most beloved morning, afternoon, and evening recipes.</p>
+          </div>
+
+          <!-- Featured Combo Hero Card -->
+          <div class="combo-hero-card">
+            <div class="combo-hero-card__grid">
+              <div class="combo-hero-card__media">
+                <img src="../assets/images/combo-banner-thali.webp" alt="Amma's Royal South Indian Tiffin Combo served with assorted chutneys, sambar, and sweets" width="1400" height="933" loading="lazy" />
+              </div>
+              <div class="combo-hero-card__content">
+                <div class="tiffin-card__badges" style="margin-bottom: 0.5rem;">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Ultimate Feast for Two</span>
+                </div>
+                <h3 style="font-family: var(--font-display); font-size: 1.8rem; margin: 0 0 0.5rem; color: var(--filter-coffee);">Amma's Royal Tiffin Feast for Two</h3>
+                <p style="color: var(--filter-coffee-muted); margin-bottom: 1.25rem;">A grand journey across iconic Southern culinary traditions. Includes two Steamed Malligai Idlis, two Medu Vadas, one Mini Masala Dosa, one Ghee Rava Roast, two Davara Filter Coffees, and two bowls of Warm Paal Payasam.</p>
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                  <span style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--leaf);">£38.00 <span style="font-size: 0.95rem; font-weight: 400; color: var(--filter-coffee-muted);">(Combined Value £47.50)</span></span>
+                  <a href="./contact.html" class="btn btn--leaf">Reserve a Table for Feast</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Curated Combo Cards -->
+          <div class="cards-grid-4">
+            <article class="tiffin-card" data-tilt data-card-anim="steam">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/signature-1.webp" alt="Suprabhatam morning breakfast combo with mini dosa, idli, vada, and filter coffee" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Breakfast Combo</span>
+                </div>
+                <h3 class="tiffin-card__title">Suprabhatam Express Combo</h3>
+                <p class="tiffin-card__desc">One Steamed Idli, one crispy Medu Vada, one Mini Masala Dosa, sambar, coconut chutney, and piping hot Kumbakonam Filter Coffee.</p>
+                <span class="tiffin-card__price">£18.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="leaf">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/signature-2.webp" alt="Banana-Leaf Sadhya lunch combo platter with traditional accompaniments" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Lunch Combo</span>
+                </div>
+                <h3 class="tiffin-card__title">Midday Sadhya Executive Box</h3>
+                <p class="tiffin-card__desc">Ponni Sambar Sadam, Kovil Puliyodarai, Pomegranate Curd Rice, two vegetable poriyals, appalam, mango pickle, and payasam.</p>
+                <span class="tiffin-card__price">£22.00</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="spice">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/signature-3.webp" alt="Teatime snack combo with paniyaram, mirchi bajji, and degree coffee" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Evening Combo</span>
+                </div>
+                <h3 class="tiffin-card__title">Teatime Tiffin Trio</h3>
+                <p class="tiffin-card__desc">Four Chettinad Kuzhi Paniyarams, two crispy Milagai Bajjis, kara chutney, and Davara Filter Kaapi served frothy at your table.</p>
+                <span class="tiffin-card__price">£16.50</span>
+              </div>
+            </article>
+
+            <article class="tiffin-card" data-tilt data-card-anim="dosa-roll">
+              <div class="tiffin-card__inner">
+                <div class="tiffin-card__media">
+                  <img src="../assets/images/signature-4.webp" alt="Weekend grand dosa tasting platter with three mini dosas and four chutneys" width="800" height="600" loading="lazy" />
+                </div>
+                <div class="tiffin-card__badges">
+                  <span class="badge badge--veg">Pure Veg</span>
+                  <span class="badge badge--chef">Tasting Platter</span>
+                </div>
+                <h3 class="tiffin-card__title">Triple Dosa Tasting Board</h3>
+                <p class="tiffin-card__desc">Three petite specialty dosas: Ghee Podi Roast, Onion Rava, and Beetroot Lentil Uttapam, with four artisanal temple chutneys.</p>
+                <span class="tiffin-card__price">£24.00</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- =====================================================================
+       SITE FOOTER
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="./index.html" class="brand-logo site-footer__brand" aria-label="Amma's Tiffin House - Home">
+            <span class="brand-logo__emblem" aria-hidden="true">
+              <img src="../assets/images/logo.svg" alt="Amma's Tiffin House Logo" class="brand-logo__img" width="46" height="46" />
+            </span>
+            <span class="brand-logo__text">
+              <span class="brand-logo__name">Amma's Tiffin House</span>
+              <span class="brand-logo__sub">Covent Garden • Est. 1988</span>
+            </span>
+          </a>
+          <p>Stone-ground South Indian breakfast, banana-leaf lunch meals, and brass-davara filter coffee crafted daily in the heart of Covent Garden since 1988.</p>
+          <div class="social-row" aria-label="Social Media Links">
+            <a href="https://instagram.com" class="social-pill" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="https://facebook.com" class="social-pill" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://youtube.com" class="social-pill" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home 1</a></li>
+            <li><a href="./home-2.html">Home 2</a></li>
+            <li><a href="./menu.html">Daily Tiffin &amp; Meals Menu</a></li>
+            <li><a href="./our-story.html">Our 1988 Covent Garden Story</a></li>
+            <li><a href="./contact.html">Contact &amp; Table Booking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Utility Pages</h4>
+          <ul class="footer-links">
+            <li><a href="./menu.html#panel-lunch">Banana-Leaf Lunch Meals</a></li>
+            <li><a href="./coming-soon.html">New Soho Branch (Soon)</a></li>
+            <li><a href="./404.html">404 Error Page Preview</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Visit Covent Garden</h4>
+          <p>42 Covent Garden Piazza, London WC2E 8HD, United Kingdom</p>
+          <p><strong>Phone:</strong> <a href="tel:+442079460198" class="ltr-num">+44 20 7946 0198</a></p>
+          <p><strong>Email:</strong> <a href="mailto:vanakkam@ammastiffinhouse.com">vanakkam@ammastiffinhouse.com</a></p>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>&copy; 2026 Amma's Tiffin House. Crafted with pure ghee &amp; hospitality.</span>
+        <span>100% Pure Vegetarian South Indian Kitchen</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Up (Back to Top) Floating Button -->
+  <button type="button" class="scroll-up-btn" data-scroll-top aria-label="Scroll to top of page" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="../assets/js/plugins/tilt.js" defer></script>
+  <script src="../assets/js/plugins/counter.js" defer></script>
+  <script src="../assets/js/plugins/plate-builder.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
+
