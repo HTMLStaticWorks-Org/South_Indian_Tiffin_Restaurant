@@ -3263,10 +3263,6 @@ textarea {
 /* --------------------------------------------------------------------------
    11. OUR STORY (our-story.html) — COLLAGE HERO, ZIG-ZAG & TIMELINE
    -------------------------------------------------------------------------- */
-.story-hero {
-  padding-block: var(--space-6) var(--space-8);
-}
-
 .story-hero__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -3441,11 +3437,11 @@ textarea {
 .story-hero,
 .menu-hero {
   position: relative;
-  min-height: 420px;
+  min-height: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: var(--space-8);
+  padding-block: var(--space-5);
   color: #FAF3E6;
   overflow: hidden;
   box-sizing: border-box;
@@ -3531,7 +3527,7 @@ textarea {
   color: #FAF3E6;
   text-align: center;
   margin-inline: auto;
-  max-width: 24ch;
+  max-width: 32ch;
   font-family: var(--font-display);
   font-size: clamp(2rem, 3.8vw, 3rem);
   line-height: 1.15;

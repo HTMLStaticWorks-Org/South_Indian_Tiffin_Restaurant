@@ -651,8 +651,8 @@
   .story-hero,
   .menu-hero {
     position: relative;
-    min-height: 340px;
-    padding-block: var(--space-6);
+    min-height: 360px;
+    padding-block: var(--space-4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -704,11 +704,11 @@
   .contact-hero__inner h1,
   .story-hero__inner h1,
   .menu-hero__inner h1 {
-    font-size: clamp(1.6rem, 5.2vw, 2.1rem);
+    font-size: clamp(1.45rem, 4.8vw, 1.95rem);
     line-height: 1.2;
     text-align: center;
     margin-inline: auto;
-    max-width: 20ch;
+    max-width: 24ch;
   }
 
   .page-hero__lead,

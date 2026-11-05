@@ -673,7 +673,7 @@
   .story-hero,
   .menu-hero {
     min-height: 380px;
-    padding-block: var(--space-6);
+    padding-block: var(--space-4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -699,7 +699,7 @@
     font-size: clamp(1.85rem, 3.2vw, 2.4rem);
     text-align: center;
     margin-inline: auto;
-    max-width: 22ch;
+    max-width: 28ch;
   }
 
   .page-hero__lead,

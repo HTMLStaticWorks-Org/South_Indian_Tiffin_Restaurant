@@ -160,8 +160,8 @@
   .contact-hero,
   .story-hero,
   .menu-hero {
-    min-height: 420px;
-    padding-block: var(--space-8);
+    min-height: 440px;
+    padding-block: var(--space-5);
     display: flex;
     align-items: center;
     justify-content: center;
