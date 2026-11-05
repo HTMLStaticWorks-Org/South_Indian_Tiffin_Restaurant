@@ -12,7 +12,10 @@ A production-ready, multi-page **HTML5 / CSS3 / ES6+ JavaScript** website templa
 South_Indian_Tiffin_Restaurant/
 ├── assets/
 │   ├── css/
-│   │   ├── style.css            # Master stylesheet (tokens, layouts, 3D cards, animations)
+│   │   ├── style.css            # Master base stylesheet (tokens, resets, shared components)
+│   │   ├── mobile.css           # Mobile view only (< 768px isolated styles)
+│   │   ├── tablet.css           # Tab view only (768px-1023px isolated styles)
+│   │   ├── desktop-1024.css     # 1024+ Desktop view only (>= 1024px isolated styles)
 │   │   ├── dark-mode.css        # Filter-coffee & temple-brass dark theme (WCAG 2.1 AA)
 │   │   └── rtl.css              # Right-to-Left (RTL) layout & directional mirroring
 │   ├── js/

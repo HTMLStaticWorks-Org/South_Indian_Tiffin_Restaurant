@@ -1,9 +1,15 @@
 /* ==========================================================================
-   AMMA'S TIFFIN HOUSE — MASTER STYLESHEET (style.css)
-   Premium Multi-Page South Indian Tiffin Restaurant Template
-   Palette: Banana-Leaf Green, Turmeric Gold, Kumkum Maroon, Coconut Cream,
-            Filter-Coffee Brown & Temple-Brass Gold.
-   Spacing: 8px base scale | Breakpoints: 640px, 1024px, 1280px (Mobile-First)
+   AMMA'S TIFFIN HOUSE — MASTER BASE STYLESHEET (style.css)
+   Contains global tokens, typography, colors, resets & base components.
+   
+   IMPORTANT ARCHITECTURE NOTE:
+   VIEW-SPECIFIC RESPONSIVE CODES ARE STRICTLY SEPARATED:
+   - MOBILE VIEW (< 768px):           assets/css/mobile.css
+   - TAB (TABLET) VIEW (768px-1023px): assets/css/tablet.css
+   - 1024+ DESKTOP VIEW (>= 1024px):   assets/css/desktop-1024.css
+
+   To modify styles for a specific view, edit ONLY its corresponding file above!
+   Changes made in one view file will NEVER affect the other views.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -229,6 +235,7 @@
   --space-4: 2rem;     /* 32px */
   --space-5: 2.5rem;   /* 40px */
   --space-6: 3rem;     /* 48px */
+  --space-7: 3.5rem;   /* 56px */
   --space-8: 4rem;     /* 64px */
   --space-10: 5rem;    /* 80px */
   --space-12: 6rem;    /* 96px */
@@ -239,6 +246,7 @@
   --radius-lg: 1.375rem;
   --radius-pill: 999px;
 
+  --header-height: 78px;
   --header-bg: rgba(251, 247, 239, 0.88);
   --header-border: rgba(182, 134, 44, 0.25);
   --card-shadow: 0 16px 38px -14px rgba(36, 22, 16, 0.14), 0 2px 8px rgba(36, 22, 16, 0.05);
@@ -937,6 +945,21 @@ textarea {
   color: var(--filter-coffee);
 }
 
+/* Theme & RTL Toggles Responsive Placement:
+   On mobile and tab views (< 1024px), these 2 icons move inside the hamburger menu.
+   On desktop (>= 1024px), they are displayed in the header actions bar. */
+.header-actions [data-theme-toggle],
+.header-actions [data-rtl-toggle] {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header-actions [data-theme-toggle],
+  .header-actions [data-rtl-toggle] {
+    display: inline-flex;
+  }
+}
+
 .header-cta {
   display: none;
 }
@@ -996,6 +1019,89 @@ textarea {
 
 .nav-drawer.is-open {
   transform: translateX(0);
+}
+
+.nav-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.nav-drawer__close {
+  flex-shrink: 0;
+  margin-inline-start: auto;
+}
+
+.nav-drawer__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.65rem;
+  background: var(--coconut-muted);
+  border: 1px solid var(--brass-border);
+  border-radius: var(--radius-sm);
+  margin-block: 0.15rem 0.35rem;
+}
+
+.nav-drawer__actions [data-theme-toggle],
+.nav-drawer__actions [data-rtl-toggle] {
+  display: inline-flex !important;
+}
+
+.nav-drawer__dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-drawer__dropdown-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 46px;
+  padding: 0.65rem 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: none;
+  border: none;
+  color: var(--filter-coffee);
+  cursor: pointer;
+  text-align: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.nav-drawer__dropdown-trigger:hover,
+.nav-drawer__dropdown.is-open .nav-drawer__dropdown-trigger {
+  background: var(--leaf-tint);
+  color: var(--leaf);
+}
+
+.nav-drawer__arrow {
+  transition: transform 200ms ease;
+}
+
+.nav-drawer__dropdown.is-open .nav-drawer__arrow {
+  transform: rotate(180deg);
+}
+
+.nav-drawer__sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0.45rem;
+  padding-inline-start: var(--space-3);
+  border-inline-start: 2px solid var(--brass-border);
+  margin-inline-start: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nav-drawer__dropdown:not(.is-open) .nav-drawer__sub-menu {
+  display: none;
 }
 
 .nav-drawer__list {
@@ -1434,7 +1540,8 @@ textarea {
    -------------------------------------------------------------------------- */
 .hero-split {
   position: relative;
-  padding-block: var(--space-5) 0;
+  padding-block-start: var(--space-6);
+  padding-block-end: var(--space-8);
   overflow: hidden;
 }
 
@@ -1979,6 +2086,14 @@ textarea {
   text-align: center;
 }
 
+.newsletter-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .newsletter-form__row {
   display: flex;
   flex-direction: column;
@@ -2029,10 +2144,19 @@ textarea {
   opacity: 1;
 }
 
+.hero-kenburns__slide picture {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-kenburns__slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transform: scale(1.02);
   transition: transform 4500ms ease-out;
 }
@@ -2208,6 +2332,12 @@ textarea {
   justify-content: space-between;
   gap: var(--space-2);
   margin-bottom: var(--space-3);
+}
+
+.snap-toolbar__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .snap-track {
@@ -2395,6 +2525,17 @@ textarea {
 
 :root[data-theme="dark"] .plate-summary__row--grand {
   color: var(--turmeric);
+}
+
+.plate-summary__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.plate-summary__actions .btn--primary {
+  flex: 1;
 }
 
 /* Masonry Kitchen & Ambience Mosaic + Lightbox */
@@ -3187,10 +3328,17 @@ textarea {
   z-index: 1;
 }
 
+.contact-hero__bg picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .contact-hero__bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .contact-hero__scrim {

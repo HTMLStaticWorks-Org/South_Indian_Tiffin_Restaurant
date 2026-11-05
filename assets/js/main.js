@@ -200,6 +200,29 @@
       navBackdrop.addEventListener('click', () => setDrawerState(false));
     }
 
+    const navCloseButtons = document.querySelectorAll('[data-nav-close]');
+    navCloseButtons.forEach((btn) => {
+      btn.addEventListener('click', () => setDrawerState(false));
+    });
+
+    const drawerNavLinks = navDrawer?.querySelectorAll('a.nav-drawer__link');
+    drawerNavLinks?.forEach((link) => {
+      link.addEventListener('click', () => setDrawerState(false));
+    });
+
+    const drawerDropdownTriggers = navDrawer?.querySelectorAll('[data-drawer-dropdown-trigger]');
+    drawerDropdownTriggers?.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const parent = btn.closest('[data-drawer-dropdown]');
+        if (parent) {
+          const isOpen = parent.classList.toggle('is-open');
+          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+      });
+    });
+
     dropdownWrappers.forEach((wrapper) => {
       const trigger = wrapper.querySelector('[data-dropdown-trigger]');
       const menu = wrapper.querySelector('[data-dropdown-menu]');

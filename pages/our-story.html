@@ -33,7 +33,11 @@
     })();
   </script>
 
+  <!-- Stylesheets (Base, Separated Mobile/Tab/1024 Views, Dark Mode & RTL) -->
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/mobile.css" media="(max-width: 767.98px)" />
+  <link rel="stylesheet" href="../assets/css/tablet.css" media="(min-width: 768px) and (max-width: 1023.98px)" />
+  <link rel="stylesheet" href="../assets/css/desktop-1024.css" media="(min-width: 1024px)" />
   <link rel="stylesheet" href="../assets/css/dark-mode.css" />
   <link rel="stylesheet" href="../assets/css/rtl.css" />
 
@@ -148,23 +152,63 @@
 
   <div class="nav-backdrop" data-nav-backdrop></div>
   <aside id="mobile-drawer" class="nav-drawer" data-nav-drawer aria-label="Mobile Navigation">
-    <div class="brand-logo">
-      <span class="brand-logo__emblem" aria-hidden="true">
-        <img src="../assets/images/logo.svg" alt="Amma's Tiffin House Logo" class="brand-logo__img" width="46" height="46" />
-      </span>
-      <span class="brand-logo__text">
-        <span class="brand-logo__name">Amma's Tiffin House</span>
-        <span class="brand-logo__sub">Our Story</span>
-      </span>
+    <div class="nav-drawer__header">
+      <button type="button" class="icon-btn nav-drawer__close" data-nav-close aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
+
+    <!-- Mobile Drawer Utility Controls: Theme & RTL -->
+    <div class="nav-drawer__actions" aria-label="Appearance and language preferences">
+      <button type="button" class="icon-btn" data-theme-toggle aria-pressed="false" aria-label="Switch to Filter Coffee dark mode">
+        <span class="theme-toggle__moon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </span>
+        <span class="theme-toggle__sun" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4.5"/>
+            <line x1="12" y1="2" x2="12" y2="4.5"/>
+            <line x1="12" y1="19.5" x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22" x2="6" y2="6"/>
+            <line x1="18" y1="18" x2="19.78" y2="19.78"/>
+            <line x1="2" y1="12" x2="4.5" y2="12"/>
+            <line x1="19.5" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="6" y2="18"/>
+            <line x1="18" y1="6" x2="19.78" y2="4.22"/>
+          </svg>
+        </span>
+      </button>
+
+      <button type="button" class="icon-btn" data-rtl-toggle aria-pressed="false" aria-label="Switch layout direction to Right-to-Left">
+        <span data-rtl-label>RTL</span>
+      </button>
+    </div>
+
     <ul class="nav-drawer__list">
-      <li><a href="./index.html" class="nav-drawer__link">Home 1</a></li>
-      <li class="nav-drawer__sub"><a href="./home-2.html" class="nav-drawer__link">Home 2</a></li>
-      <li><a href="./menu.html" class="nav-drawer__link">Menu by Meal Time</a></li>
+      <li class="nav-drawer__dropdown" data-drawer-dropdown>
+        <button type="button" class="nav-drawer__dropdown-trigger" data-drawer-dropdown-trigger aria-expanded="false">
+          <span>Home</span>
+          <svg class="nav-drawer__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="m6 9 6 6 6-6"/>
+          </svg>
+        </button>
+        <ul class="nav-drawer__sub-menu">
+          <li><a href="./index.html" class="nav-drawer__link">Home 1</a></li>
+          <li><a href="./home-2.html" class="nav-drawer__link">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="./menu.html" class="nav-drawer__link">Menu</a></li>
       <li><a href="./our-story.html" class="nav-drawer__link" aria-current="page">Our Story</a></li>
-      <li><a href="./contact.html" class="nav-drawer__link">Contact &amp; Location Map</a></li>
+      <li><a href="./contact.html" class="nav-drawer__link">Contact</a></li>
     </ul>
-    <a href="tel:+442079460198" class="btn btn--kumkum">Call <span class="ltr-num">+44 20 7946 0198</span></a>
+
+    <!-- Reservation & CTA (Same as Web View) -->
+    <a href="./contact.html#reserve-table" class="btn btn--kumkum">Reserve / Call Now</a>
   </aside>
 
   <!-- =====================================================================

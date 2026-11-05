@@ -1,0 +1,246 @@
+/* ==========================================================================
+   AMMA'S TIFFIN HOUSE - 1024+ DESKTOP VIEW STYLESHEET
+   --------------------------------------------------------------------------
+   VIEW: 1024+ Desktop Screens Only
+   SCOPE: Screen width >= 1024px
+   NOTE: Any changes made in this file will ONLY affect 1024+ DESKTOP view.
+         It will NEVER affect Mobile or Tab (Tablet) views.
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+
+  /* ------------------------------------------------------------------------
+     1. HEADER & TOP NAVIGATION (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  /* Show horizontal primary navigation menu on desktop */
+  .primary-nav {
+    display: flex !important;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  /* Hide hamburger button on desktop */
+  .hamburger-btn {
+    display: none !important;
+  }
+
+  /* In 1024 desktop view, Theme & RTL toggles are displayed directly in the header bar */
+  .header-actions [data-theme-toggle],
+  .header-actions [data-rtl-toggle] {
+    display: inline-flex !important;
+  }
+
+  /* Header CTA button: visible on desktop */
+  .header-cta {
+    display: inline-flex !important;
+    padding-inline: 1.25rem;
+    font-size: 0.92rem;
+  }
+
+  /* Mobile/tab drawer preferences row: hidden on desktop */
+  .nav-drawer__actions {
+    display: none !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     2. CONTAINERS, SPACING & TYPOGRAPHY (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .container {
+    padding-inline: var(--space-6);
+  }
+
+  .section {
+    padding-block: var(--space-10);
+  }
+
+  h1, .h1 {
+    font-size: clamp(2.8rem, 4.4vw, 3.85rem);
+    line-height: 1.12;
+  }
+
+  h2, .h2 {
+    font-size: clamp(2.1rem, 3.2vw, 2.75rem);
+    line-height: 1.18;
+  }
+
+  /* ------------------------------------------------------------------------
+     3. HOME 1: HERO & SPECIALS (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .hero-split {
+    padding-block-start: var(--space-8);
+    padding-block-end: var(--space-10);
+  }
+
+  .hero-split__grid {
+    grid-template-columns: 1.06fr 0.94fr;
+    gap: var(--space-8);
+  }
+
+  .hero-split__actions {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .hero-split__actions .btn,
+  .newsletter-actions .btn {
+    width: 250px;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cards-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cards-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .timings-strip {
+    grid-template-columns: 240px 1fr;
+    padding: var(--space-5);
+  }
+
+  .timings-slots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     4. HOME 2: HERO & MODULES (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .hero-kenburns__social-rail {
+    display: flex !important;
+  }
+
+  .plate-builder-grid {
+    grid-template-columns: 1.35fr 0.85fr;
+  }
+
+  .plate-choices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mosaic-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     5. MENU PAGE (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .menu-breakfast-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lunch-feature-duo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .evening-compact-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bev-two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bev-medallions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dotted-menu-sheet {
+    padding: var(--space-6);
+  }
+
+  /* ------------------------------------------------------------------------
+     6. OUR STORY (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .story-hero__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .zigzag-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .heritage-timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-step {
+    width: 50%;
+    padding-inline-start: 0;
+    padding-inline-end: var(--space-5);
+  }
+
+  .timeline-step:nth-child(even) {
+    margin-left: 50%;
+    padding-inline-start: var(--space-5);
+    padding-inline-end: 0;
+  }
+
+  .timeline-step__dot {
+    left: auto;
+    right: -9px;
+  }
+
+  .timeline-step:nth-child(even) .timeline-step__dot {
+    left: -9px;
+    right: auto;
+  }
+
+  /* ------------------------------------------------------------------------
+     7. CONTACT & RESERVATION (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .contact-split {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .contact-form-panel {
+    padding: var(--space-5);
+  }
+
+  .form-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     8. 404 & COMING SOON (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .coming-soon-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     9. FOOTER & UTILITIES (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .site-footer__grid {
+    grid-template-columns: 1.4fr 0.9fr 0.9fr 1.1fr;
+  }
+
+  .site-footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   WIDE DESKTOP EXPANSION (1280px+)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1280px) {
+  .status-badge {
+    display: inline-flex !important;
+  }
+
+  .snap-track {
+    grid-auto-columns: 390px;
+  }
+}
+

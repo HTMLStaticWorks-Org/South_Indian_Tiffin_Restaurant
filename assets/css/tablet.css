@@ -1,0 +1,770 @@
+/* ==========================================================================
+   AMMA'S TIFFIN HOUSE - TAB (TABLET) VIEW STYLESHEET
+   --------------------------------------------------------------------------
+   VIEW: Tab (Tablet) Devices Only
+   SCOPE: Screen width from 768px up to 1023.98px
+   NOTE: Any changes made in this file will ONLY affect TAB view.
+         It will NEVER affect Mobile or 1024+ Desktop views.
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+
+  /* ------------------------------------------------------------------------
+     1. HEADER & TOP NAVIGATION (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  /* Hide desktop primary nav on tablet (uses hamburger drawer) */
+  .primary-nav {
+    display: none !important;
+  }
+
+  /* Show hamburger button on tablet */
+  .hamburger-btn {
+    display: inline-flex !important;
+  }
+
+  /* In tab view, hide Theme & RTL buttons in top header bar (they are inside hamburger menu) */
+  .header-actions [data-theme-toggle],
+  .header-actions [data-rtl-toggle] {
+    display: none !important;
+  }
+
+  /* Kitchen hours live badge: hidden on tablet */
+  .status-badge {
+    display: none !important;
+  }
+
+  /* Header CTA button: hidden on tablet navbar (available inside drawer) */
+  .header-cta {
+    display: none !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     2. MOBILE/TAB DRAWER & ACTIONS (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .nav-drawer {
+    width: min(380px, 60vw);
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .nav-drawer__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+
+  .nav-drawer__close {
+    flex-shrink: 0;
+    margin-inline-start: auto;
+  }
+
+  /* Preferences bar inside tab drawer: Theme & RTL icons centered */
+  .nav-drawer__actions {
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    gap: 1.5rem !important;
+    padding: 0.65rem 0.95rem;
+    background: var(--coconut-muted);
+    border: 1px solid var(--brass-border);
+    border-radius: var(--radius-sm);
+    margin-block: 0.25rem 0.85rem;
+  }
+
+  /* Navigation Links & Dropdown Triggers: Centered in Tab Drawer */
+  .nav-drawer__list {
+    text-align: center !important;
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .nav-drawer__list > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-drawer__link {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .nav-drawer__dropdown {
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-drawer__dropdown-trigger {
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 0.5rem !important;
+    width: 100%;
+  }
+
+  .nav-drawer__sub-menu {
+    border-inline-start: none !important;
+    padding-inline-start: 0 !important;
+    margin-inline: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.35rem;
+  }
+
+  .nav-drawer__sub-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-drawer__sub-menu .nav-drawer__link {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Bottom Drawer CTA Button */
+  .nav-drawer .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 0.85rem;
+  }
+
+  /* ------------------------------------------------------------------------
+     3. CONTAINERS, SPACING & TYPOGRAPHY (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .container {
+    padding-inline: var(--space-5);
+  }
+
+  .section {
+    padding-block: var(--space-8);
+  }
+
+  h1, .h1 {
+    font-size: clamp(2.3rem, 5vw, 3rem);
+    line-height: 1.16;
+    text-align: center;
+  }
+
+  h2, .h2 {
+    font-size: clamp(1.85rem, 4.2vw, 2.35rem);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h3, .h3 {
+    text-align: center;
+  }
+
+  /* All Tags, Eyebrows & Badges: Center-aligned on Tab */
+  .eyebrow,
+  .hero-live-badge,
+  .story-signature {
+    display: inline-flex;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  /* Section Headers & Intros: Center-aligned on Tab */
+  .section-header,
+  .section-header--left,
+  .menu-panel .section-header {
+    text-align: center !important;
+    margin-inline: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-header p,
+  .section-header .section-desc {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 68ch;
+  }
+
+  /* ------------------------------------------------------------------------
+     4. HOME 1: HERO & SPECIALS (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .hero-split {
+    padding-block-start: var(--space-6);
+    padding-block-end: var(--space-8);
+  }
+
+  .hero-split__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+
+  .hero-split__copy {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 680px;
+  }
+
+  .hero-live-badge {
+    margin-inline: auto;
+    margin-bottom: var(--space-3);
+  }
+
+  .hero-split__lead {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 58ch;
+  }
+
+  .hero-split__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-inline: auto;
+  }
+
+  .hero-split__actions .btn,
+  .newsletter-actions .btn {
+    width: 250px;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .thali-feature-banner__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thali-feature-banner__content .hero-split__actions {
+    justify-content: center;
+  }
+
+  .timings-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timings-intro {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 58ch;
+  }
+
+  .newsletter-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-inline: auto;
+  }
+
+  .newsletter-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-box .eyebrow,
+  .newsletter-box h2,
+  .newsletter-box p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .combo-parallax-banner__copy {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .combo-parallax-banner__copy .hero-split__actions {
+    justify-content: center;
+  }
+
+  .cards-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .cards-grid-4 > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: calc(50% - (var(--space-4) / 2));
+    margin-inline: auto;
+    justify-self: center;
+  }
+
+  .cards-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  /* All Cards Typography & Balanced Alignment (Tab / iPad Mini) */
+  .tiffin-card {
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--space-3) 0.85rem;
+  }
+
+  .tiffin-card__inner {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tiffin-card__title {
+    text-align: center;
+    margin-inline: auto;
+    font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+    min-height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tiffin-card__desc {
+    text-align: center;
+    margin-inline: auto;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  /* Testimonial Cards Layout & Authors / Names Alignment */
+  .testimonial-card__quote {
+    font-size: clamp(0.85rem, 1.8vw, 0.98rem);
+    line-height: 1.55;
+    font-style: italic;
+    color: var(--filter-coffee);
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .testimonial-card__author {
+    margin-top: auto;
+    width: 100%;
+    border-top: 1px solid var(--brass-border);
+    padding-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .testimonial-card__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 2.2rem;
+    font-family: var(--font-display);
+    font-size: clamp(0.88rem, 2vw, 1.12rem);
+    font-weight: 700;
+    color: var(--filter-coffee);
+    line-height: 1.2;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .testimonial-card__role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 2.4rem;
+    color: var(--brass);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: clamp(0.6rem, 1.3vw, 0.7rem);
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+  }
+
+  .timings-strip {
+    grid-template-columns: 1fr;
+    padding: var(--space-5);
+  }
+
+  .timings-slots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .newsletter-form__row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* ------------------------------------------------------------------------
+     5. HOME 2: HERO & MODULES (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .hero-kenburns {
+    min-height: 580px;
+    padding-block: var(--space-6);
+  }
+
+  .hero-kenburns__slides,
+  .hero-kenburns__slide,
+  .hero-kenburns__slide picture,
+  .hero-kenburns__slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-kenburns__center {
+    padding-block: var(--space-6);
+    text-align: center;
+  }
+
+  .hero-kenburns__social-rail {
+    display: none !important;
+  }
+
+  .snap-toolbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  .snap-toolbar > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .snap-toolbar .eyebrow,
+  .snap-toolbar h2,
+  .snap-toolbar p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 60ch;
+  }
+
+  .snap-toolbar__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .snap-toolbar .btn {
+    margin-inline: auto;
+  }
+
+  .plate-builder-intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plate-builder-intro .eyebrow,
+  .plate-builder-intro h2,
+  .plate-builder-intro p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 65ch;
+  }
+
+  .snap-track {
+    grid-auto-columns: minmax(360px, 42vw);
+  }
+
+  .plate-builder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plate-choices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plate-choices-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: calc(50% - (var(--space-2) / 2));
+    margin-inline: auto;
+    justify-self: center;
+  }
+
+  .mosaic-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  /* When an odd number of image cards are present in tab view, center the last card */
+  .mosaic-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: calc(50% - (var(--space-2) / 2));
+    margin-inline: auto;
+    justify-self: center;
+  }
+
+  .mosaic-item__caption {
+    text-align: center;
+  }
+
+  .insta-strip {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     6. MENU PAGE (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .menu-page-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-page-header .eyebrow,
+  .menu-page-header h1,
+  .menu-page-header p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 65ch;
+  }
+  .menu-breakfast-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-breakfast-grid > :last-child:nth-child(odd),
+  .evening-compact-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: calc(50% - (var(--space-3) / 2));
+    margin-inline: auto;
+    justify-self: center;
+  }
+
+  .lunch-feature-duo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .evening-compact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bev-two-col {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .bev-column {
+    padding: var(--space-4);
+  }
+
+  .bev-medallions {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .menu-panel > h3 {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .dotted-menu-sheet {
+    padding: var(--space-5);
+  }
+
+  /* ------------------------------------------------------------------------
+     7. OUR STORY (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .story-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-hero .container > div:first-child,
+  .story-hero__copy {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 680px;
+  }
+
+  .story-hero__copy .eyebrow,
+  .story-hero__copy h1,
+  .story-hero__copy p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 60ch;
+  }
+
+  .story-hero__copy .hero-split__actions {
+    justify-content: center;
+  }
+
+  .zigzag-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .heritage-timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-step {
+    width: 50%;
+    padding-inline-start: 0;
+    padding-inline-end: var(--space-5);
+  }
+
+  .timeline-step:nth-child(even) {
+    margin-left: 50%;
+    padding-inline-start: var(--space-5);
+    padding-inline-end: 0;
+  }
+
+  .timeline-step__dot {
+    left: auto;
+    right: -9px;
+  }
+
+  .timeline-step:nth-child(even) .timeline-step__dot {
+    left: -9px;
+    right: auto;
+  }
+
+  /* ------------------------------------------------------------------------
+     8. CONTACT & RESERVATION (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .contact-hero__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+  }
+
+  .contact-hero__inner .eyebrow,
+  .contact-hero__inner h1,
+  .contact-hero__inner p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 58ch;
+  }
+
+  .contact-split {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-panel {
+    padding: var(--space-5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-panel .eyebrow,
+  .contact-form-panel h2,
+  .contact-form-panel > p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 60ch;
+  }
+
+  .contact-form-panel form {
+    width: 100%;
+    text-align: start;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     9. 404 & COMING SOON (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .error-stage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+  }
+
+  .error-stage .eyebrow,
+  .error-stage h1,
+  .error-stage p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 54ch;
+  }
+
+  .error-stage .btn {
+    margin-inline: auto;
+  }
+
+  .coming-soon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coming-soon-grid > div:first-child {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+  }
+
+  .coming-soon-grid .eyebrow,
+  .coming-soon-grid h1,
+  .coming-soon-grid p {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 58ch;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     10. FOOTER & UTILITIES (TAB VIEW)
+     ------------------------------------------------------------------------ */
+  .site-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .site-footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+

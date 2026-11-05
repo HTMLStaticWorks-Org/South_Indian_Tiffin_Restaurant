@@ -59,6 +59,11 @@
   border-color: var(--brass-border);
 }
 
+:root[data-theme="dark"] .nav-drawer__actions {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(212, 164, 73, 0.28);
+}
+
 :root[data-theme="dark"] .icon-btn {
   border-color: rgba(212, 164, 73, 0.35);
   color: #FAF3E6;

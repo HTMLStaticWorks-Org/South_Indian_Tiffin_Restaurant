@@ -1,0 +1,797 @@
+/* ==========================================================================
+   AMMA'S TIFFIN HOUSE - MOBILE VIEW STYLESHEET
+   --------------------------------------------------------------------------
+   VIEW: Mobile Devices Only
+   SCOPE: Screen width <= 767.98px
+   NOTE: Any changes made in this file will ONLY affect MOBILE view.
+         It will NEVER affect Tab (Tablet) or 1024+ Desktop views.
+   ========================================================================== */
+
+@media (max-width: 767.98px) {
+
+  /* ------------------------------------------------------------------------
+     1. HEADER & TOP NAVIGATION (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  /* Hide desktop horizontal menu on mobile */
+  .primary-nav {
+    display: none !important;
+  }
+
+  /* Show hamburger button on mobile */
+  .hamburger-btn {
+    display: inline-flex !important;
+  }
+
+  /* In mobile view, hide Theme & RTL buttons in top header bar (they are inside hamburger menu) */
+  .header-actions [data-theme-toggle],
+  .header-actions [data-rtl-toggle] {
+    display: none !important;
+  }
+
+  /* Kitchen hours live badge: hidden on mobile to conserve header space */
+  .status-badge {
+    display: none !important;
+  }
+
+  /* Header CTA button: hidden on mobile to give full prominence to logo and hamburger */
+  .header-cta {
+    display: none !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     2. MOBILE DRAWER & ACTIONS (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .nav-drawer {
+    width: min(340px, 88vw);
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .nav-drawer__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+
+  .nav-drawer__close {
+    flex-shrink: 0;
+    margin-inline-start: auto;
+  }
+
+  /* Preferences bar inside mobile drawer: Theme & RTL icons centered */
+  .nav-drawer__actions {
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    gap: 1.25rem !important;
+    padding: 0.6rem 0.85rem;
+    background: var(--coconut-muted);
+    border: 1px solid var(--brass-border);
+    border-radius: var(--radius-sm);
+    margin-block: 0.25rem 0.75rem;
+  }
+
+  /* Navigation Links & Dropdown Triggers: Centered in Mobile Drawer */
+  .nav-drawer__list {
+    text-align: center !important;
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .nav-drawer__list > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-drawer__link {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .nav-drawer__dropdown {
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-drawer__dropdown-trigger {
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 0.5rem !important;
+    width: 100%;
+  }
+
+  .nav-drawer__sub-menu {
+    border-inline-start: none !important;
+    padding-inline-start: 0 !important;
+    margin-inline: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.35rem;
+  }
+
+  .nav-drawer__sub-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-drawer__sub-menu .nav-drawer__link {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Bottom Drawer CTA Button */
+  .nav-drawer .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 0.75rem;
+  }
+
+  /* ------------------------------------------------------------------------
+     3. CONTAINERS, SPACING & TYPOGRAPHY (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .container {
+    padding-inline: var(--space-3);
+  }
+
+  .section {
+    padding-block: var(--space-6);
+  }
+
+  /* All Headings: Center-aligned on Mobile */
+  h1, .h1 {
+    font-size: clamp(2rem, 8.5vw, 2.75rem);
+    line-height: 1.14;
+    text-align: center;
+  }
+
+  h2, .h2 {
+    font-size: clamp(1.6rem, 6.5vw, 2.15rem);
+    line-height: 1.18;
+    text-align: center;
+  }
+
+  h3, .h3 {
+    font-size: clamp(1.2rem, 4.5vw, 1.45rem);
+    text-align: center;
+  }
+
+  h4, .h4, h5, .h5, h6, .h6 {
+    text-align: center;
+  }
+
+  /* All Tags, Eyebrows & Badges: Center-aligned on Mobile */
+  .eyebrow,
+  .hero-live-badge,
+  .badge,
+  .story-signature {
+    display: inline-flex;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  /* Section Headers & Intros: Center-aligned on Mobile */
+  .section-header,
+  .section-header--left,
+  .menu-panel .section-header {
+    text-align: center !important;
+    margin-inline: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-header p,
+  .section-header .section-desc {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* ------------------------------------------------------------------------
+     4. HOME 1: HERO & SPECIALS (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .hero-split {
+    padding-block-start: var(--space-5);
+    padding-block-end: 0;
+  }
+
+  .hero-split__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    padding-bottom: var(--space-5);
+  }
+
+  /* Marquee Dish Running Ticker: Clean spacing on mobile */
+  .dish-marquee {
+    margin-block-start: var(--space-2);
+  }
+
+  /* Leave comfortable, prominent gap between Dish Marquee strip and Morning Steamer tag */
+  .hero-split + .section,
+  section[aria-labelledby="specials-heading"] {
+    padding-block-start: var(--space-6) !important;
+  }
+
+  .hero-split__copy {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-live-badge {
+    margin-inline: auto;
+    margin-bottom: var(--space-3);
+  }
+
+  .hero-split__lead {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .hero-split__actions,
+  .newsletter-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 360px;
+    gap: 0.75rem;
+  }
+
+  .hero-split__actions .btn,
+  .newsletter-actions .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-split__badge-ring {
+    width: 108px;
+    height: 108px;
+    left: 0.5rem;
+    bottom: -1rem;
+  }
+
+  .hero-split__badge-center {
+    font-size: 0.82rem;
+  }
+
+  .tiffin-card__title {
+    min-height: 2.8rem;
+    font-size: 1.25rem;
+  }
+
+  .timings-strip {
+    grid-template-columns: 1fr;
+    padding: var(--space-4);
+  }
+
+  .timings-strip__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timings-strip__header p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .timings-slots {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-card,
+  .newsletter-panel {
+    text-align: center;
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .newsletter-card .eyebrow,
+  .newsletter-card h2,
+  .newsletter-card p,
+  .newsletter-panel .eyebrow,
+  .newsletter-panel h2,
+  .newsletter-panel p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .newsletter-form__row {
+    flex-direction: column;
+  }
+
+  .newsletter-form__row .btn {
+    width: 100%;
+  }
+
+  .thali-feature-banner__content {
+    text-align: center;
+  }
+
+  .thali-feature-banner__content .eyebrow,
+  .thali-feature-banner__content h2,
+  .thali-feature-banner__content p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* Chef's Combo Parallax Banner & Price Pill: Mobile Alignment */
+  .combo-parallax-banner__content {
+    text-align: center;
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .combo-parallax-banner__content h2,
+  .combo-parallax-banner__content p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .combo-price-pill {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.2rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    max-width: 94%;
+    margin-inline: auto;
+    margin-bottom: var(--space-3);
+  }
+
+  .combo-price-pill__title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .combo-price-pill__price {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+
+  .combo-price-pill__sep {
+    display: none;
+  }
+
+  /* ------------------------------------------------------------------------
+     5. HOME 2: HERO & MODULES (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .hero-kenburns__slides,
+  .hero-kenburns__slide,
+  .hero-kenburns__slide picture,
+  .hero-kenburns__slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-kenburns__social-rail {
+    display: none !important;
+  }
+
+  .hero-kenburns__center {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .hero-kenburns__center h1,
+  .hero-kenburns__center p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .snap-toolbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  .snap-toolbar > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .snap-toolbar .eyebrow,
+  .snap-toolbar h2,
+  .snap-toolbar p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .snap-toolbar__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .snap-toolbar .icon-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .snap-toolbar .btn {
+    margin-inline: auto;
+  }
+
+  .snap-track {
+    grid-auto-columns: minmax(280px, 82vw);
+  }
+
+  .plate-builder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plate-builder-intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plate-builder-intro .eyebrow,
+  .plate-builder-intro h2,
+  .plate-builder-intro p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .plate-choices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plate-summary {
+    position: static;
+    padding: var(--space-3);
+  }
+
+  .plate-summary__actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .plate-summary__actions .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mosaic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insta-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ------------------------------------------------------------------------
+     6. MENU PAGE (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .menu-page-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-page-header .eyebrow,
+  .menu-page-header h1,
+  .menu-page-header p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .menu-breakfast-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lunch-feature-duo {
+    grid-template-columns: 1fr;
+  }
+
+  .evening-compact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bev-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .bev-medallions {
+    grid-template-columns: 1fr;
+  }
+
+  .dotted-menu-sheet {
+    padding: var(--space-4) var(--space-3);
+    overflow: hidden;
+  }
+
+  .dotted-menu-list {
+    gap: var(--space-3);
+  }
+
+  .dotted-menu-list li {
+    padding-bottom: var(--space-3);
+    border-bottom: 1px dashed var(--brass-border);
+  }
+
+  .dotted-menu-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .dotted-menu-row__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.5rem;
+  }
+
+  .dotted-menu-row__name {
+    width: 100%;
+    font-size: 1.18rem;
+    line-height: 1.35;
+    margin-bottom: 0.15rem;
+  }
+
+  .dotted-menu-row__leader {
+    flex: 1;
+    min-width: 16px;
+    border-bottom: 2px dotted var(--brass);
+    align-self: center;
+  }
+
+  .dotted-menu-row__price {
+    font-size: 1.15rem;
+    white-space: nowrap;
+    margin-inline-start: auto;
+  }
+
+  /* ------------------------------------------------------------------------
+     7. OUR STORY (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .story-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-hero .container > div:first-child,
+  .story-hero__copy {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-hero h1,
+  .story-hero p,
+  .story-signature {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .zigzag-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .zigzag-row__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .zigzag-row__content .eyebrow,
+  .zigzag-row__content h3,
+  .zigzag-row__content p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .zigzag-row--reverse .zigzag-row__media {
+    order: 0;
+  }
+
+  .heritage-timeline::before {
+    left: 1rem;
+    transform: none;
+  }
+
+  .timeline-step {
+    width: 100%;
+    padding-inline-start: 2.75rem;
+    padding-inline-end: 0;
+  }
+
+  .timeline-step:nth-child(even) {
+    margin-left: 0;
+    padding-inline-start: 2.75rem;
+  }
+
+  .timeline-step__dot {
+    left: 0.5rem !important;
+    right: auto !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     8. CONTACT & RESERVATION (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .contact-hero {
+    position: relative;
+    padding-block: var(--space-6);
+    min-height: 380px;
+  }
+
+  .contact-hero__bg,
+  .contact-hero__bg picture,
+  .contact-hero__bg img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .contact-hero__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-hero__inner .eyebrow,
+  .contact-hero__inner h1,
+  .contact-hero__inner p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .contact-split {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-panel {
+    padding: var(--space-4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-panel .eyebrow,
+  .contact-form-panel h2,
+  .contact-form-panel > p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .contact-form-panel form {
+    width: 100%;
+    text-align: start;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* ------------------------------------------------------------------------
+     9. 404 & COMING SOON (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .error-stage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error-stage .eyebrow,
+  .error-stage h1,
+  .error-stage p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .coming-soon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coming-soon-grid > div:first-child {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coming-soon-grid .eyebrow,
+  .coming-soon-grid h1,
+  .coming-soon-grid p {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  /* ------------------------------------------------------------------------
+     10. FOOTER & UTILITIES (MOBILE VIEW)
+     ------------------------------------------------------------------------ */
+  .cards-grid-4,
+  .cards-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    padding-bottom: calc(var(--space-8) + 3rem);
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    text-align: start;
+  }
+
+  .site-footer h4 {
+    text-align: start;
+    font-size: 1.15rem;
+    margin-bottom: var(--space-2);
+  }
+
+  .site-footer p {
+    text-align: start;
+  }
+
+  .site-footer .footer-links {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .site-footer .social-row {
+    justify-content: flex-start;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-2);
+    padding-top: var(--space-4);
+  }
+
+  .steam-wisp--3 {
+    display: none !important;
+  }
+}
+
