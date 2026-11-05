@@ -154,6 +154,20 @@
   }
 
   /* ------------------------------------------------------------------------
+     UNIFIED NON-HOME PAGES HERO (1024+ DESKTOP VIEW)
+     ------------------------------------------------------------------------ */
+  .page-hero,
+  .contact-hero,
+  .story-hero,
+  .menu-hero {
+    min-height: 420px;
+    padding-block: var(--space-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ------------------------------------------------------------------------
      6. OUR STORY (1024+ DESKTOP VIEW)
      ------------------------------------------------------------------------ */
   .story-hero__grid {
@@ -177,19 +191,20 @@
   }
 
   .timeline-step:nth-child(even) {
-    margin-left: 50%;
+    margin-inline-start: 50%;
+    margin-inline-end: 0;
     padding-inline-start: var(--space-5);
     padding-inline-end: 0;
   }
 
   .timeline-step__dot {
-    left: auto;
-    right: -9px;
+    inset-inline-start: auto;
+    inset-inline-end: -9px;
   }
 
   .timeline-step:nth-child(even) .timeline-step__dot {
-    left: -9px;
-    right: auto;
+    inset-inline-start: -9px;
+    inset-inline-end: auto;
   }
 
   /* ------------------------------------------------------------------------

@@ -222,6 +222,37 @@
        ===================================================================== -->
   <main id="main-content">
 
+    <!-- =====================================================================
+         SECTION 1: MENU HERO
+         ===================================================================== -->
+    <section class="page-hero menu-hero" aria-labelledby="menu-page-heading">
+      <div class="page-hero__bg menu-hero__bg">
+        <picture>
+          <source srcset="../assets/images/menu-banner.webp" type="image/webp" />
+          <img
+            src="../assets/images/menu-banner.jpg"
+            alt="Traditional South Indian breakfast feast spread with golden dosas, steamed idlis, bowls of sambar, chutneys, and filter coffee"
+            width="1600"
+            height="700"
+            fetchpriority="high"
+          />
+        </picture>
+      </div>
+      <div class="page-hero__scrim menu-hero__scrim" aria-hidden="true"></div>
+      <div class="container page-hero__inner menu-hero__inner">
+        <nav aria-label="Breadcrumb" style="display: flex; justify-content: center;">
+          <ol class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li class="breadcrumb__sep" aria-hidden="true">/</li>
+            <li aria-current="page">Our Menu</li>
+          </ol>
+        </nav>
+        <span class="eyebrow" style="color: var(--turmeric); margin-bottom: var(--space-2); margin-inline: auto;">100% Pure Vegetarian South Indian Kitchen</span>
+        <h1 id="menu-page-heading">Authentic Heirloom Tiffin Menu</h1>
+        <p class="page-hero__lead" style="max-width: 58ch; margin-inline: auto;">All prices are in British Pounds (£) and inclusive of 20% VAT. Every item is cooked to order using cold-pressed sesame oil, fresh coconut, and pure cultured ghee.</p>
+      </div>
+    </section>
+
     <!-- Today's Special Ribbon -->
     <!-- TODO: Update daily special announcement -->
     <div class="menu-special-ribbon" role="region" aria-label="Today's Kitchen Special">
@@ -229,17 +260,9 @@
       <span>Karuveppilai Ghee Podi Mini Idli (14 pcs) &amp; Tender-Coconut Elaneer Payasam — Available All Day (£18.50)</span>
     </div>
 
-    <!-- =====================================================================
-         SECTION 1: MENU INTRODUCTION
-         ===================================================================== -->
-    <section class="section" style="padding-bottom: var(--space-5);" aria-labelledby="menu-page-heading">
+    <!-- Dietary & Allergen Legend Section -->
+    <section class="section" style="padding-block: var(--space-4);" aria-label="Dietary and Allergen Legend">
       <div class="container">
-        <div class="section-header" style="margin-bottom: var(--space-3);">
-          <span class="eyebrow">100% Pure Vegetarian South Indian Kitchen</span>
-          <h1 id="menu-page-heading">Menu Introduction</h1>
-          <p>All prices are in British Pounds (£) and inclusive of 20% VAT. Every item is cooked to order using cold-pressed sesame oil, fresh coconut, and pure cultured ghee.</p>
-        </div>
-
         <div class="dietary-legend" aria-label="Dietary and Spice Legend">
           <span class="badge badge--veg">Pure Vegetarian</span>
           <span class="badge badge--chef">Chef's Pick</span>

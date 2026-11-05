@@ -346,6 +346,11 @@
   }
 
   /* Testimonial Cards Layout & Authors / Names Alignment */
+  .testimonial-card__avatar {
+    width: 68px;
+    height: 68px;
+  }
+
   .testimonial-card__quote {
     font-size: clamp(0.85rem, 1.8vw, 0.98rem);
     line-height: 1.55;
@@ -644,35 +649,64 @@
   }
 
   .timeline-step:nth-child(even) {
-    margin-left: 50%;
+    margin-inline-start: 50%;
+    margin-inline-end: 0;
     padding-inline-start: var(--space-5);
     padding-inline-end: 0;
   }
 
   .timeline-step__dot {
-    left: auto;
-    right: -9px;
+    inset-inline-start: auto;
+    inset-inline-end: -9px;
   }
 
   .timeline-step:nth-child(even) .timeline-step__dot {
-    left: -9px;
-    right: auto;
+    inset-inline-start: -9px;
+    inset-inline-end: auto;
   }
 
   /* ------------------------------------------------------------------------
-     8. CONTACT & RESERVATION (TAB VIEW)
+     UNIFIED NON-HOME PAGES HERO (TAB VIEW)
      ------------------------------------------------------------------------ */
-  .contact-hero__inner {
+  .page-hero,
+  .contact-hero,
+  .story-hero,
+  .menu-hero {
+    min-height: 380px;
+    padding-block: var(--space-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-hero__inner,
+  .contact-hero__inner,
+  .story-hero__inner,
+  .menu-hero__inner {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-inline: auto;
+    max-width: 680px;
   }
 
-  .contact-hero__inner .eyebrow,
+  .page-hero__inner h1,
   .contact-hero__inner h1,
-  .contact-hero__inner p {
+  .story-hero__inner h1,
+  .menu-hero__inner h1 {
+    font-size: clamp(1.85rem, 3.2vw, 2.4rem);
+    text-align: center;
+    margin-inline: auto;
+    max-width: 22ch;
+  }
+
+  .page-hero__lead,
+  .page-hero__inner p,
+  .contact-hero__inner p,
+  .story-hero__inner p,
+  .menu-hero__inner p {
     text-align: center;
     margin-inline: auto;
     max-width: 58ch;

@@ -219,37 +219,33 @@
     <!-- =====================================================================
          SECTION 1: OUR STORY HERO
          ===================================================================== -->
-    <section class="story-hero section--muted" aria-labelledby="story-hero-heading">
-      <div class="container story-hero__grid">
-        <div>
-          <span class="eyebrow" style="margin-bottom: var(--space-2);">Our Story Hero</span>
-          <!-- Handwritten-Style Kalam Signature -->
-          <span class="story-signature">“Anbudan, from Amma’s hearth since 1988…”</span>
-          <h1 id="story-hero-heading">A Veranda, Six Brass Tumblers &amp; One Granite Wet-Stone</h1>
-          <p style="font-size: 1.1rem; max-width: 54ch;">
-            Before our dining room opened its doors on Covent Garden Piazza, morning visitors followed the aroma of roasted fenugreek, curry leaves, and fresh churned ghee drifting from Meenakshi Amma’s kitchen.
-          </p>
-          <div class="hero-split__actions" style="margin-top: var(--space-3);">
-            <a href="#milestones" class="btn btn--primary" data-magnetic>Walk Our Timeline</a>
-            <a href="./menu.html" class="btn btn--outline" data-magnetic>Taste Heirloom Dishes</a>
-          </div>
-        </div>
-
-        <!-- Story Hero Photo -->
-        <div class="story-collage">
-          <div class="story-collage__main">
-            <picture>
-              <source srcset="../assets/images/story-hero-1.webp" type="image/webp" />
-              <img
-                src="../assets/images/story-hero-1.jpg"
-                alt="Traditional South Indian matriarch in cotton sari roasting kuzhi paniyarams over an open wood hearth"
-                width="1000"
-                height="750"
-                fetchpriority="high"
-              />
-            </picture>
-          </div>
-        </div>
+    <section class="page-hero story-hero" aria-labelledby="story-hero-heading">
+      <div class="page-hero__bg story-hero__bg">
+        <picture>
+          <source srcset="../assets/images/story-banner.webp" type="image/webp" />
+          <img
+            src="../assets/images/story-banner.jpg"
+            alt="Nostalgic 1988 South Indian ancestral veranda with six brass tumblers, a granite wet-stone, and carved pillars"
+            width="1600"
+            height="700"
+            fetchpriority="high"
+          />
+        </picture>
+      </div>
+      <div class="page-hero__scrim story-hero__scrim" aria-hidden="true"></div>
+      <div class="container page-hero__inner story-hero__inner">
+        <nav aria-label="Breadcrumb" style="display: flex; justify-content: center;">
+          <ol class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li class="breadcrumb__sep" aria-hidden="true">/</li>
+            <li aria-current="page">Our Story</li>
+          </ol>
+        </nav>
+        <span class="eyebrow" style="color: var(--turmeric); margin-bottom: var(--space-2); margin-inline: auto;">Our Heritage Since 1988</span>
+        <h1 id="story-hero-heading">A Veranda, Six Brass Tumblers &amp; One Granite Wet-Stone</h1>
+        <p class="page-hero__lead" style="max-width: 58ch; margin-inline: auto;">
+          Before our dining room opened its doors on Covent Garden Piazza, morning visitors followed the aroma of roasted fenugreek, curry leaves, and fresh churned ghee drifting from Meenakshi Amma’s kitchen.
+        </p>
       </div>
     </section>
 
@@ -262,6 +258,34 @@
           <span class="eyebrow">Where It Began</span>
           <h2 id="origin-heading">The Beginning of Our Journey</h2>
           <p>From an unhurried morning veranda to a Covent Garden London landmark.</p>
+        </div>
+
+        <!-- Matriarch Hearth Tribute & Action Links -->
+        <div class="zigzag-row zigzag-row--reverse reveal" style="margin-bottom: var(--space-6);">
+          <div class="zigzag-row__media">
+            <picture>
+              <source srcset="../assets/images/story-hero-1.webp" type="image/webp" />
+              <img
+                src="../assets/images/story-hero-1.jpg"
+                alt="Traditional South Indian matriarch in cotton sari roasting kuzhi paniyarams over an open wood hearth"
+                width="1000"
+                height="750"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div>
+            <span class="story-signature">“Anbudan, from Amma’s hearth since 1988…”</span>
+            <span class="eyebrow">The Matriarch's Hearth</span>
+            <h3>Rooted in Grandmother Meenakshi's Veranda</h3>
+            <p>
+              Before our dining room opened its doors on Covent Garden Piazza, morning visitors followed the aroma of roasted fenugreek, curry leaves, and fresh churned ghee drifting from Meenakshi Amma’s kitchen.
+            </p>
+            <div class="hero-split__actions" style="margin-top: var(--space-3);">
+              <a href="#milestones" class="btn btn--primary" data-magnetic>Walk Our Timeline</a>
+              <a href="./menu.html" class="btn btn--outline" data-magnetic>Taste Heirloom Dishes</a>
+            </div>
+          </div>
         </div>
 
         <div class="zigzag-row reveal">
@@ -316,7 +340,7 @@
     <section id="milestones" class="section section--muted" aria-labelledby="timeline-heading">
       <div class="container">
         <div class="section-header reveal">
-          <span class="eyebrow">38 Years of Stewardship</span>
+          <span class="eyebrow"><bdi>38 Years of Stewardship</bdi></span>
           <h2 id="timeline-heading">Our Culinary Heritage</h2>
           <p>Milestones along our 38-year journey of authentic South Indian stewardship.</p>
         </div>

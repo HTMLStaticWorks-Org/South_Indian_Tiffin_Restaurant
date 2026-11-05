@@ -644,17 +644,32 @@
   }
 
   /* ------------------------------------------------------------------------
-     8. CONTACT & RESERVATION (MOBILE VIEW)
+     UNIFIED NON-HOME PAGES HERO (MOBILE VIEW)
      ------------------------------------------------------------------------ */
-  .contact-hero {
+  .page-hero,
+  .contact-hero,
+  .story-hero,
+  .menu-hero {
     position: relative;
+    min-height: 340px;
     padding-block: var(--space-6);
-    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+  .page-hero__bg,
   .contact-hero__bg,
+  .story-hero__bg,
+  .menu-hero__bg,
+  .page-hero__bg picture,
   .contact-hero__bg picture,
-  .contact-hero__bg img {
+  .story-hero__bg picture,
+  .menu-hero__bg picture,
+  .page-hero__bg img,
+  .contact-hero__bg img,
+  .story-hero__bg img,
+  .menu-hero__bg img {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -664,18 +679,48 @@
     object-position: center;
   }
 
-  .contact-hero__inner {
+  .page-hero__inner,
+  .contact-hero__inner,
+  .story-hero__inner,
+  .menu-hero__inner {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-inline: var(--space-2);
   }
 
+  .page-hero__inner .eyebrow,
   .contact-hero__inner .eyebrow,
-  .contact-hero__inner h1,
-  .contact-hero__inner p {
+  .story-hero__inner .eyebrow,
+  .menu-hero__inner .eyebrow {
+    font-size: 0.72rem;
     text-align: center;
     margin-inline: auto;
+  }
+
+  .page-hero__inner h1,
+  .contact-hero__inner h1,
+  .story-hero__inner h1,
+  .menu-hero__inner h1 {
+    font-size: clamp(1.6rem, 5.2vw, 2.1rem);
+    line-height: 1.2;
+    text-align: center;
+    margin-inline: auto;
+    max-width: 20ch;
+  }
+
+  .page-hero__lead,
+  .page-hero__inner p,
+  .contact-hero__inner p,
+  .story-hero__inner p,
+  .menu-hero__inner p {
+    text-align: center;
+    margin-inline: auto;
+    font-size: 0.94rem;
+    line-height: 1.5;
+    max-width: 95%;
   }
 
   .contact-split {

@@ -72,17 +72,76 @@
   transform-origin: right center;
 }
 
-/* Vertical Timeline Mirroring */
+/* Vertical Timeline Mirroring (38 Years of Stewardship) */
 :root[dir="rtl"] .heritage-timeline::before {
   left: auto;
   right: 1.25rem;
+  transform: none;
+}
+
+:root[dir="rtl"] .timeline-step {
+  width: 100%;
+  padding-right: 2.75rem;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+:root[dir="rtl"] .timeline-step:nth-child(even) {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 2.75rem;
+  padding-left: 0;
+}
+
+:root[dir="rtl"] .timeline-step__dot {
+  left: auto !important;
+  right: 0.65rem !important;
+}
+
+:root[dir="rtl"] .timeline-step:nth-child(even) .timeline-step__dot {
+  left: auto !important;
+  right: 0.65rem !important;
 }
 
 @media (min-width: 768px) {
   :root[dir="rtl"] .heritage-timeline::before {
-    right: 50%;
-    transform: translateX(50%);
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
   }
+
+  :root[dir="rtl"] .timeline-step {
+    width: 50% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: var(--space-5) !important;
+  }
+
+  :root[dir="rtl"] .timeline-step:nth-child(even) {
+    width: 50% !important;
+    margin-right: 50% !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: var(--space-5) !important;
+  }
+
+  :root[dir="rtl"] .timeline-step__dot {
+    right: auto !important;
+    left: -9px !important;
+  }
+
+  :root[dir="rtl"] .timeline-step:nth-child(even) .timeline-step__dot {
+    left: auto !important;
+    right: -9px !important;
+  }
+}
+
+:root[dir="rtl"] .eyebrow {
+  unicode-bidi: isolate;
+  display: inline-block;
 }
 
 /* Mobile Drawer Slide From Inline-End (Left in RTL) */
